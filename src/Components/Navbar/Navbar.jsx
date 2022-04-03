@@ -2,12 +2,18 @@ import React from "react";
 import "./Navbar.scss";
 import { Link, useParams } from "react-router-dom";
 
-const Navbar = () => {
-  let parameter = useParams();
-  console.log(parameter);
+const Navbar = (path) => {
+  path = path.path;
 
   return (
-    <div className="navbar">
+    <div
+      className="navbar"
+      style={
+        path === "home"
+          ? { backgroundColor: "transparent" }
+          : { backgroundColor: "#15171C" }
+      }
+    >
       <div className="navbar__logo">
         <Link to="/" className="navbar__links-link">
           <img
@@ -18,24 +24,64 @@ const Navbar = () => {
       </div>
       <div className="navbar__links">
         <ul>
-          <li>
+          <li
+            style={
+              path === "fitness"
+                ? {
+                    borderBottomColor: "white",
+                    borderBottomWidth: "2px",
+                    borderBottomStyle: "solid",
+                  }
+                : { borderWidth: "none" }
+            }
+          >
             <Link to="/fitness" className="navbar__links-link">
               fitness
             </Link>{" "}
           </li>
-          <li>
+          <li
+            style={
+              path === "care"
+                ? {
+                    borderBottomColor: "white",
+                    borderBottomWidth: "2px",
+                    borderBottomStyle: "solid",
+                  }
+                : { borderWidth: "none" }
+            }
+          >
             {" "}
             <Link to="/care" className="navbar__links-link">
               care
             </Link>{" "}
           </li>
-          <li>
+          <li
+            style={
+              path === "mind"
+                ? {
+                    borderBottomColor: "white",
+                    borderBottomWidth: "2px",
+                    borderBottomStyle: "solid",
+                  }
+                : { borderWidth: "none" }
+            }
+          >
             {" "}
             <Link to="/mind" className="navbar__links-link">
               mind
             </Link>{" "}
           </li>
-          <li>
+          <li
+            style={
+              path === "store"
+                ? {
+                    borderBottomColor: "white",
+                    borderBottomWidth: "2px",
+                    borderBottomStyle: "solid",
+                  }
+                : { borderWidth: "none" }
+            }
+          >
             {" "}
             <Link to="/store" className="navbar__links-link">
               store
