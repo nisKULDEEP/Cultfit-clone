@@ -1,11 +1,13 @@
 import React from "react";
+import Navbar from "../Navbar/Navbar";
 // import "./Fitness.scss";
 
 const Fitness = () => {
   return (
-    <div className="navbar-k">
-      Fitness
-      <div className="navbar__links-k"></div>
+    <div>
+      <Navbar path="fitness" />
+      {/* Start coding from here */}
+      Fitness Page
     </div>
   );
 };

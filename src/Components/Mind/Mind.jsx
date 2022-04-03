@@ -1,8 +1,15 @@
 import React from "react";
-// import "./Mind.scss";
+import Navbar from "../Navbar/Navbar";
+import "./Mind.scss";
 
 const Mind = () => {
-  return <div>Mind</div>;
+  return (
+    <div>
+      <Navbar path="mind" />
+      {/* Start coding from here */}
+      Mind Page
+    </div>
+  );
 };
 
 export default Mind;
