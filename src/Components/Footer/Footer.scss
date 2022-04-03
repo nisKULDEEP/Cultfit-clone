@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items:center ;
+    // align-items:center ;
     box-sizing: border-box;
     position:absolute;
     bottom: 0;
@@ -27,8 +27,13 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      
         img{
             width: 150px;
+            @media screen and (max-width: "769px") {
+        width: 100px;
+                
+            }  
         }
 
         &-text{
@@ -36,13 +41,22 @@
             cursor: default;
             margin: 0;
             color: #cacaca;
-            font-size: 14px;
+            // font-size: 14px;
             font-family: Inter-Regular,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
             letter-spacing: 0.5px;
             line-height: 22px;
-            width: 400px;
+            width: 250px;
             padding-top: 40px;
+
+            @media screen and (max-width: "769px") {
+                display: none;
+            }  
+
         }
+        @media screen and (max-width: "769px") {
+        justify-content: start;
+        height: 100%;
+        }  
     }
 
     &__textBoxOne{
@@ -96,6 +110,9 @@
             width: 150px;
             margin-bottom: 40px;
             cursor: pointer;
+            @media screen and (max-width: "769px") {
+        width: 100px;
+            }  
         }
 
         }
@@ -103,10 +120,45 @@
         &-social-links{
             display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-end;
         width: 100%;
         cursor: pointer;
+        img{
+            margin: 0 10px;
+
+            @media screen and (max-width: "1024px") {
+                width: 30px;
+                &:nth-child(4){
+                    display: none;
+                }
+            
+                &:nth-child(5){
+                    display: none;
+                }
+              }
+
+            @media screen and (max-width: "769px") {
+               
+                    width: 30px;
+
+                    &:nth-child(4){
+                        display: none;
+                    }
+                
+                    &:nth-child(5){
+                        display: none;
+                    }
+            }  
+        }
 
         }
     }
+
+    @media screen and (max-width: "1024px") {
+        font-size: 10px;
+      }
+
+      @media screen and (max-width: "769px") {
+        
+      }  
 }
