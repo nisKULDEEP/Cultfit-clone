@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
+import "./Care.scss";
 
 const Care = () => {
   const [loading__Status, setLoading__Status] = useState(true);
@@ -25,8 +26,11 @@ const Care = () => {
   ) : (
     <div>
       <Navbar path="care" />
-      {/* Start coding from here */}
-      Care Page
+
+      <div className="care-body" style={{ paddingTop: "60px" }}>
+        {/* Start coding from here */}
+        Fitness Page
+      </div>
     </div>
   );
 };

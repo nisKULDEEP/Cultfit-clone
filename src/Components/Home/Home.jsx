@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import "./Home.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
   const [loading__Status, setLoading__Status] = useState(true);
@@ -8,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     let setIntervalId = setInterval(() => {
       setLoading__Status(false);
-    }, 2000);
+    }, 1000);
 
     return () => {
       clearInterval(setIntervalId);
@@ -191,6 +193,105 @@ const Home = () => {
       </>
 
       {/* HOMEPAGE FIRST VEDIO POSTER ENDS */}
+
+      {/* IMAGES SECTION STARTS */}
+      <div className="homePage__images-container">
+        <div className="homePage__images-container_box">
+          <div className="homePage__images-container_box_row1">
+            <div data-aos="zoom-in-left">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_630,ar_1.488,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/image_zoom_widget/image_zoom_widget_img_1.png"
+                alt=""
+              />
+            </div>
+            <div data-aos="zoom-in-right">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_630,ar_1.404,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive/image/test/image_zoom_widget/image_zoom_widget_img_2.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div className="homePage__images-container_box_row2">
+            <div data-aos="zoom-in-left">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_630,ar_1.29,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/image_zoom_widget/image_zoom_widget_img_3.png"
+                alt=""
+              />
+            </div>
+            <div data-aos="zoom-out">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_630,ar_1.488,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/image_zoom_widget/image_zoom_widget_img_4.png"
+                alt=""
+              />
+            </div>
+            <div data-aos="zoom-in-right">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_630,ar_1.123,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/image_zoom_widget/image_zoom_widget_img_5.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div className="homePage__images-container_txt" data-aos="fade-in">
+          <p>cultpass</p>
+          <h4>One membership for all your fitness needs</h4>
+        </div>
+      </div>
+
+      {/* IMAGES SECTION ENDS */}
+
+      {/* IMAGES SECTION STARTS */}
+      <div className="homePage__images-container">
+        <div className="homePage__images-container_box">
+          <div className="homePage__images-container_box_row2">
+            <div data-aos="zoom-in-left">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_150,ar_0.79,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/trainer-parallax/tile-1.png"
+                alt=""
+              />
+            </div>
+            <div data-aos="zoom-in-right">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_150,ar_0.79,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/trainer-parallax/tile-2.png"
+                alt=""
+              />
+            </div>
+            <div data-aos="zoom-in-right">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_150,ar_0.79,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/trainer-parallax/tile-3.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div className="homePage__images-container_box_row2">
+            <div data-aos="zoom-in-left">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_150,ar_0.79,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/trainer-parallax/tile-4.png"
+                alt=""
+              />
+            </div>
+            <div data-aos="zoom-out">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_150,ar_0.79,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/trainer-parallax/tile-5.png"
+                alt=""
+              />
+            </div>
+            <div data-aos="zoom-in-right">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_150,ar_0.79,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/trainer-parallax/tile-6.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div className="homePage__images-container_txt_new" data-aos="fade-in">
+          <p>Fun, trainer led group classes</p>
+        </div>
+      </div>
+
+      {/* IMAGES SECTION ENDS */}
 
       {/* CULTPASS SECTION START */}
 
@@ -448,8 +549,52 @@ const Home = () => {
       </div>
 
       {/* POSTER CARDS ENDS */}
+
+      {/* WELLNESS HUB STARTS */}
+
+      <div className="homePage__wellnesshub-container">
+        <div className="homePage__wellnesshub-container_text-box">
+          <div className="homePage__wellnesshub-container_text-box_title">
+            <h4>Wellness Hub</h4>
+            <p>One place for all your well-being needs</p>
+          </div>
+          <div className="homePage__wellnesshub-container_text-box_options">
+            <div>WORKOUT GEAR</div>
+            <div>CONSULT ONLINE</div>
+            <div>LABS</div>
+            <div>THERAPY</div>
+          </div>
+        </div>
+
+        <div className="homePage__wellnesshub-container_img-box"></div>
+      </div>
+
+      {/* WELLNESS HUB ENDS */}
+
+      {/* DOWNLOAD APP STARTS */}
+      <div className="download_container-ks">
+        <div className="homePage__download-container">
+          <div className="homePage__download-container-title">
+            <h3>Download the most loved fitness app</h3>
+            <p>Start your fitness journey with us. Join the Cult!</p>
+          </div>
+
+          <div className="homePage__download-container-img">
+            <img
+              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,h_50,ar_2.98,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/download-app/app-store-dark-card-2.png"
+              alt=""
+            />
+            <img
+              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,h_50,ar_3.31,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/download-app/play-store-dark-card-2.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      {/* DOWNLOAD APP ENDS */}
     </div>
   );
 };
 
+AOS.init({ offset: 300, duration: 2000 });
 export default Home;
