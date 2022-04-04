@@ -11,6 +11,11 @@
 }
 
 .homePage {
+  color: white;
+  background-color: rgba(18, 21, 31);
+
+  font-family: "Open Sans", sans-serif;
+
   &__video-poster-one {
     transform-style: preserve-3d;
     will-change: transform;
@@ -23,7 +28,7 @@
       width: 100%;
       will-change: transform;
       opacity: 1;
-      top: -60px;
+      top: 0;
     }
   }
 
@@ -49,7 +54,6 @@
       // border: 1px solid red;
       margin: 10% 40%;
 
-      
       img {
         position: relative;
         top: 0;
@@ -57,23 +61,21 @@
         width: 400px;
         // z-index: 20;
       }
-      @media screen and (max-width : 1024px) {
-        &{
-
+      @media screen and (max-width: 1024px) {
+        & {
           margin: 10% 25%;
 
-          img{
+          img {
             width: 300px;
           }
         }
       }
 
-      @media screen and (max-width : 769px) {
-        &{
-
+      @media screen and (max-width: 769px) {
+        & {
           margin: 10% 20%;
 
-          img{
+          img {
             width: 200px;
           }
         }
@@ -116,29 +118,360 @@
           font-weight: 700;
           margin: 20px auto;
 
-
           &:hover {
             color: #f06055;
           }
         }
       }
 
-      @media screen and (max-width : 1100px) {
-        &{
-
+      @media screen and (max-width: 1100px) {
+        & {
           margin: 35% 10%;
-
-         
         }
       }
 
-      @media screen and (max-width : 769px) {
-        &{
-
+      @media screen and (max-width: 769px) {
+        & {
           margin: 50% 5%;
-
         }
       }
     }
   }
 }
+
+.homePage__cultpass {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22px;
+  position: relative;
+  z-index: 3;
+
+  &-background {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -100;
+    overflow: hidden;
+    img {
+      opacity: 0.2;
+      width: 50vw;
+    }
+  }
+
+  &-title {
+    text-align: center;
+    img {
+      width: 250px;
+    }
+    p {
+      text-align: center;
+
+      &:nth-child(2) {
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 22px;
+      }
+
+      &:nth-child(3) {
+        margin-top: 22px;
+        font-size: 15px;
+        font-weight: 700;
+        color: rgb(33, 121, 179);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .homePage__cultpass-type {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    // align-items: center;
+    align-content: center;
+    // width: 100vw;
+    overflow: hidden;
+    // border: 1px solid red;
+    margin-top: 22px;
+    min-height: 500px;
+
+    @media screen and (max-width : 1024px) {
+      flex-wrap: wrap;
+      // margin: 10px;
+    }
+
+    &-one {
+      // border: 1px solid blue;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+       justify-content: space-evenly;
+      // align-content: flex-end;
+      margin: 10px 20px;
+      position: relative;
+      z-index: inherit;
+
+      &_imgBox {
+        .homePage__cultpass-poster {
+          width: 300px;
+          
+          &:hover{
+            width: 310px;
+            transition: all  ease-in-out;
+          }
+        }
+
+        &-miniContainer {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 130px;
+          left: 20px;
+          img {
+            &:nth-child(1) {
+              width: 70px;
+              margin-bottom: 5px;
+            }
+            &:nth-child(2) {
+              width: 90px;
+            }
+          }
+        }
+      }
+    }
+
+    .homePage__cultpass-type-one_textBox {
+      p {
+        font-size: 25px;
+        font-weight: 700;
+        color: rgb(212, 209, 209);
+        margin-bottom: 20px;
+      }
+      ul {
+        padding-left: 25px;
+        color: rgb(145, 144, 144);
+        font-weight: bold;
+        line-height: 2;
+        margin-bottom: 20px;
+      }
+    }
+
+    .homePage__cultpass-type-one_btnBox {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items:center;
+      padding-top: 30px;
+
+      button {
+        &:nth-child(1) {
+          cursor: pointer;
+          font-family: Roboto, sans-serif;
+          border: 1px solid transparent;
+          transition: all 250ms ease;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: rgb(255 255 255 / 10%);
+          color: white;
+          backdrop-filter: blur(50px);
+          font-size: 14px;
+          border-radius: 5px;
+          padding: 11.5px 20px;
+          font-weight: 700;
+          width: 45%;
+          &:hover {
+            background: rgb(255 255 255 / 30%);
+          }
+        }
+
+        &:nth-child(2) {
+          cursor: pointer;
+          font-family: Roboto, sans-serif;
+          border: 1px solid transparent;
+          transition: all 250ms ease;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: white;
+          font-size: 14px;
+          border-radius: 5px;
+          padding: 11.5px 20px;
+          font-weight: 700;
+          width: 45%;
+
+          &:hover {
+            color: #f06055;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// POSTER CARDS CSS STARTS
+
+.homePage__posters{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 22px 0;
+  
+  column-gap: 0;
+
+  align-items: center;
+  position: relative;
+  z-index: 5;
+  
+
+  // border: 1px solid red;
+
+  @media screen and (max-width : 769px) {
+    flex-direction: column;
+  }
+
+
+  &-card{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    background-image: url(https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_350,ar_1.164,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/four-square-card/glass-transform-multi-color-2.png);
+    // padding-bottom: 85.9107%;
+    // height: 0px;
+    width: 400px;
+    height: 400px;
+    margin:30px 50px;
+
+    @media screen and (max-width : 1024px) {
+      width: 300px;
+    height: 300px;
+    margin:20px 30px;
+    }
+    @media screen and (max-width : 769px) {
+      width: 300px;
+      height: 300px;
+      margin:20px 30px;
+    }
+
+
+    &_text{
+      a {
+        text-decoration: none;
+        color: white;
+
+        .homePage__posters-card_text-titleText{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding: 2% 4%;
+
+          h3{
+            font-size: 30px;
+            font-weight: 900;
+          }
+
+          img{
+            width: 35px;
+          }
+
+        }
+
+        .homePage__poster-card_text-subText{
+          padding: 0 4%;
+        }
+      }
+
+   
+    }
+  }
+
+  &-card2{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_350,ar_1.164,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/four-square-card/glass-workout-gear.png");
+    // padding-bottom: 85.9107%;
+    // height: 0px;
+    width: 400px;
+    height: 400px;
+    margin:30px 50px;
+
+    @media screen and (max-width : 1024px) {
+      width: 300px;
+    height: 300px;
+    margin:20px 30px;
+    }
+    @media screen and (max-width : 769px) {
+      width: 300px;
+      height: 300px;
+      margin:20px 30px;
+    }
+
+
+    &_text{
+      a {
+        text-decoration: none;
+        color: white;
+
+        .homePage__posters-card2_text-titleText{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding: 2% 4%;
+
+          h3{
+            font-size: 30px;
+            font-weight: 900;
+          }
+
+          img{
+            width: 35px;
+          }
+
+        }
+
+        .homePage__poster-card2_text-subText{
+          padding: 0 4%;
+        }
+      }
+
+   
+    }
+  }
+}
+
+//POSTER BG IMG
+.homepage__poster-container{
+  position: relative;
+  
+  .homepage__poster-bg-img{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+    img{
+      width: 50%;
+    }
+  }
+}
+
+
