@@ -17,25 +17,27 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer__textBoxOne">
-        <div>cult.fit for buisness</div>
-        <div>cult.fit franchise</div>
-        <div>corporate partnership</div>
-        <div>cult pass network</div>
-      </div>
+      <div className="footer__textBoxContainer">
+        <div className="footer__textBoxContainer__textBoxOne">
+          <div>cult.fit for buisness</div>
+          <div>cult.fit franchise</div>
+          <div>corporate partnership</div>
+          <div>cult pass network</div>
+        </div>
 
-      <div className="footer__textBoxTwo">
-        <div>partner.fit</div>
-        <div>blogs</div>
-        <div>security</div>
-        <div>careers</div>
-      </div>
+        <div className="footer__textBoxContainer__textBoxTwo">
+          <div>partner.fit</div>
+          <div>blogs</div>
+          <div>security</div>
+          <div>careers</div>
+        </div>
 
-      <div className="footer__textBoxThree">
-        <div>contanct us</div>
-        <div>privacy policy</div>
-        <div>refund policy</div>
-        <div>terms & conditions</div>
+        <div className="footer__textBoxContainer__textBoxThree">
+          <div>contanct us</div>
+          <div>privacy policy</div>
+          <div>refund policy</div>
+          <div>terms & conditions</div>
+        </div>
       </div>
 
       <div className="footer__storeBox">
