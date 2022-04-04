@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import "./Home.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
   const [loading__Status, setLoading__Status] = useState(true);
@@ -8,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     let setIntervalId = setInterval(() => {
       setLoading__Status(false);
-    }, 2000);
+    }, 1000);
 
     return () => {
       clearInterval(setIntervalId);
@@ -26,28 +28,30 @@ const Home = () => {
   ) : (
     <div className="homePage">
       <Navbar path="home" />
-      <div className="homePage__video-poster-one">
-        <video
-          autoPlay
-          loop
-          playsInline
-          poster="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_1400,ar_1.77,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/we-are-cult-logo/promo-video-poster.jpg"
-        >
-          <source
-            src="https://cdn-images.cure.fit/www-curefit-com/video/upload/c_fill,w_1278,ar_1.77,q_auto:eco,dpr_1.0700000524520874,vc_auto,f_auto/video/test/we-are-cult-web.mp4"
-            type="video/mp4"
-          />
-        </video>
-      </div>
-      <div className="homePage__text-poster-one">
-        <div className="homePage__text-poster-one_img-one">
-          <img
-            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_500,ar_2.13,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/we-are-cult-logo/text-only-v2.png"
-            alt="we-are-cult-img"
-            loading="lazy"
-          />
+      {/* HOMEPAGE FIRST VEDIO POSTER STARTS */}
+      <>
+        <div className="homePage__video-poster-one">
+          <video
+            autoPlay
+            loop
+            playsInline
+            poster="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_1400,ar_1.77,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/we-are-cult-logo/promo-video-poster.jpg"
+          >
+            <source
+              src="https://cdn-images.cure.fit/www-curefit-com/video/upload/c_fill,w_1278,ar_1.77,q_auto:eco,dpr_1.0700000524520874,vc_auto,f_auto/video/test/we-are-cult-web.mp4"
+              type="video/mp4"
+            />
+          </video>
         </div>
-        {/* <div className="homePage__text-poster-one_svg-one">
+        <div className="homePage__text-poster-one">
+          <div className="homePage__text-poster-one_img-one">
+            <img
+              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_500,ar_2.13,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/we-are-cult-logo/text-only-v2.png"
+              alt="we-are-cult-img"
+              loading="lazy"
+            />
+          </div>
+          {/* <div className="homePage__text-poster-one_svg-one">
           <svg
             width="906"
             height="569"
@@ -179,15 +183,418 @@ const Home = () => {
           </svg>
         </div> */}
 
-        <div className="homePage__text-poster-one_text">
-          <h4>A fitness movemet that is worth breaking a sweat for </h4>
-          <div className="homePage__text-poster-one_text_btn">
-            <button>EXPLORE CULTPASS</button>
+          <div className="homePage__text-poster-one_text">
+            <h4>A fitness movemet that is worth breaking a sweat for </h4>
+            <div className="homePage__text-poster-one_text_btn">
+              <button>EXPLORE CULTPASS</button>
+            </div>
+          </div>
+        </div>
+      </>
+
+      {/* HOMEPAGE FIRST VEDIO POSTER ENDS */}
+
+      {/* IMAGES SECTION STARTS */}
+      <div className="homePage__images-container">
+        <div className="homePage__images-container_box">
+          <div className="homePage__images-container_box_row1">
+            <div data-aos="zoom-in-left">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_630,ar_1.488,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/image_zoom_widget/image_zoom_widget_img_1.png"
+                alt=""
+              />
+            </div>
+            <div data-aos="zoom-in-right">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_630,ar_1.404,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive/image/test/image_zoom_widget/image_zoom_widget_img_2.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div className="homePage__images-container_box_row2">
+            <div data-aos="zoom-in-left">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_630,ar_1.29,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/image_zoom_widget/image_zoom_widget_img_3.png"
+                alt=""
+              />
+            </div>
+            <div data-aos="zoom-out">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_630,ar_1.488,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/image_zoom_widget/image_zoom_widget_img_4.png"
+                alt=""
+              />
+            </div>
+            <div data-aos="zoom-in-right">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_630,ar_1.123,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/image_zoom_widget/image_zoom_widget_img_5.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div className="homePage__images-container_txt" data-aos="fade-in">
+          <p>cultpass</p>
+          <h4>One membership for all your fitness needs</h4>
+        </div>
+      </div>
+
+      {/* IMAGES SECTION ENDS */}
+
+      {/* IMAGES SECTION STARTS */}
+      <div className="homePage__images-container">
+        <div className="homePage__images-container_box">
+          <div className="homePage__images-container_box_row2">
+            <div data-aos="zoom-in-left">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_150,ar_0.79,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/trainer-parallax/tile-1.png"
+                alt=""
+              />
+            </div>
+            <div data-aos="zoom-in-right">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_150,ar_0.79,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/trainer-parallax/tile-2.png"
+                alt=""
+              />
+            </div>
+            <div data-aos="zoom-in-right">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_150,ar_0.79,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/trainer-parallax/tile-3.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div className="homePage__images-container_box_row2">
+            <div data-aos="zoom-in-left">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_150,ar_0.79,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/trainer-parallax/tile-4.png"
+                alt=""
+              />
+            </div>
+            <div data-aos="zoom-out">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_150,ar_0.79,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/trainer-parallax/tile-5.png"
+                alt=""
+              />
+            </div>
+            <div data-aos="zoom-in-right">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_150,ar_0.79,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/trainer-parallax/tile-6.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div className="homePage__images-container_txt_new" data-aos="fade-in">
+          <p>Fun, trainer led group classes</p>
+        </div>
+      </div>
+
+      {/* IMAGES SECTION ENDS */}
+
+      {/* CULTPASS SECTION START */}
+
+      <div className="homePage__cultpass">
+        <div className="homePage__cultpass-background">
+          <img
+            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_500,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/gradient-circle/pink-blur-circle.svg"
+            alt="pink"
+          />
+          <img
+            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_500,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/gradient-circle/golden-blur-circle.svg"
+            alt="blue"
+          />
+        </div>
+        <div className="homePage__cultpass-title">
+          <img
+            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_259,ar_3.811,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/cult-pass.svg"
+            alt="cultpass-img"
+          />
+          <p>One membership for all your fitness needs</p>
+          <p>LEARN MORE</p>
+        </div>
+
+        <div className="homePage__cultpass-type">
+          <div className="homePage__cultpass-type-one">
+            <div className="homePage__cultpass-type-one_imgBox">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_404,ar_1.31,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/introducting-cult-pass/icp_cb.png"
+                alt="elite-pass"
+                className="homePage__cultpass-poster"
+              />
+              <div className="homePage__cultpass-type-one_imgBox-miniContainer">
+                <img
+                  src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_68,ar_3.811,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/cult-pass.svg"
+                  alt="cultpass-small-logo"
+                />
+                <img
+                  src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_107,ar_3.59,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/cult-pass-elite-partial.png"
+                  alt="elite-logo"
+                />
+              </div>
+            </div>
+
+            <div className="homePage__cultpass-type-one_textBox">
+              <div className="homePage__cultpass-type-one_textBox-title">
+                <p>Unlimited access to</p>
+                <ul>
+                  <li>At-center group classes</li>
+                  <li>All ELITE & PRO gyms</li>
+                  <li>At-home live workout</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="homePage__cultpass-type-one_btnBox">
+              <button>TRY FOR FREE</button>
+              <button>LEARN MORE</button>
+            </div>
+          </div>
+
+          <div className="homePage__cultpass-type-one">
+            <div className="homePage__cultpass-type-one_imgBox">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_404,ar_1.31,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/introducting-cult-pass/icp_cg.png"
+                alt="elite-pass"
+                className="homePage__cultpass-poster"
+              />
+              <div className="homePage__cultpass-type-one_imgBox-miniContainer">
+                <img
+                  src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_68,ar_3.811,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/cult-pass.svg"
+                  alt="cultpass-small-logo"
+                />
+                <img
+                  src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_78,ar_2.63,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/cult-pass-pro-partial.png"
+                  alt="pro-logo"
+                />
+              </div>
+            </div>
+
+            <div className="homePage__cultpass-type-one_textBox">
+              <div className="homePage__cultpass-type-one_textBox-title">
+                <p>Unlimited access to</p>
+                <ul>
+                  <li>At-center group classes</li>
+                  <li>All ELITE & PRO gyms</li>
+                  <li>At-home live workout</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="homePage__cultpass-type-one_btnBox">
+              <button>TRY FOR FREE</button>
+              <button>LEARN MORE</button>
+            </div>
+          </div>
+
+          <div className="homePage__cultpass-type-one">
+            <div className="homePage__cultpass-type-one_imgBox">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_404,ar_1.31,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/introducting-cult-pass/icp_cl.png"
+                alt="live-pass"
+                className="homePage__cultpass-poster"
+              />
+              <div className="homePage__cultpass-type-one_imgBox-miniContainer">
+                <img
+                  src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_68,ar_3.811,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/cult-pass.svg"
+                  alt="cultpass-small-logo"
+                />
+                <img
+                  src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_85,ar_2.86,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/cult-pass-live-partial-4x.png"
+                  alt="live-logo"
+                />
+              </div>
+            </div>
+
+            <div className="homePage__cultpass-type-one_textBox">
+              <div className="homePage__cultpass-type-one_textBox-title">
+                <p>Unlimited access to</p>
+                <ul>
+                  <li>At-center group classes</li>
+                  <li>All ELITE & PRO gyms</li>
+                  <li>At-home live workout</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="homePage__cultpass-type-one_btnBox">
+              <button>TRY FOR FREE</button>
+              <button>LEARN MORE</button>
+            </div>
           </div>
         </div>
       </div>
+      {/* CULTPASS SECTION ENDS */}
+
+      {/* POSTER CARDS STARTS */}
+      <div className="homepage__poster-container">
+        <div className="homepage__poster-bg-img">
+          <img
+            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_700,ar_1,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/gradient-circle/aqua-blur-circle.svg"
+            alt=""
+          />
+          <img
+            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_700,ar_1,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/gradient-circle/pink-blur-circle.svg"
+            alt=""
+          />
+          <img
+            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_700,ar_1,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/gradient-circle/aqua-blur-circle.svg"
+            alt=""
+          />
+          <img
+            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_500,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/gradient-circle/aqua-blur-circle.svg"
+            alt=""
+          />
+        </div>
+        <div className="homePage__posters">
+          {/* CARD 1 */}
+          <div className="homePage__posters-card">
+            <div className="homePage__posters-card_text">
+              <a href="/transform">
+                <div className="homePage__posters-card_text-titleText">
+                  <h3>cult transform</h3>
+                  <div className="homePage__posters-card_text-titleText-icon">
+                    <img
+                      src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_40,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/four-square-card/glass-circle-arrow.svg"
+                      alt="arrow"
+                    />
+                  </div>
+                </div>
+
+                <div className="homePage__poster-card_text-subText">
+                  Get coached to lose weight for good
+                </div>
+              </a>
+            </div>
+          </div>
+
+          {/* CARD 2 */}
+          <div className="homePage__posters-card2">
+            <div className="homePage__posters-card2_text">
+              <a href="/transform">
+                <div className="homePage__posters-card2_text-titleText">
+                  <h3>Workout Gear</h3>
+                  <div className="homePage__posters-card2_text-titleText-icon">
+                    <img
+                      src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_40,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/four-square-card/glass-circle-arrow.svg"
+                      alt="arrow"
+                    />
+                  </div>
+                </div>
+
+                <div className="homePage__poster-card2_text-subText">
+                  Everything you need for your workout
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="homePage__posters">
+          {/* CARD 3 */}
+          <div
+            className="homePage__posters-card"
+            style={{
+              backgroundImage: `url(
+              "https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_350,ar_1.164,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/four-square-card/glass-blog-multi-color.png"
+            )`,
+            }}
+          >
+            <div className="homePage__posters-card_text">
+              <a href="/transform">
+                <div className="homePage__posters-card_text-titleText">
+                  <h3>The .fit way</h3>
+                  <div className="homePage__posters-card_text-titleText-icon">
+                    <img
+                      src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_40,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/four-square-card/glass-circle-arrow.svg"
+                      alt="arrow"
+                    />
+                  </div>
+                </div>
+
+                <div className="homePage__poster-card_text-subText">
+                  Making health easy, one day at a time
+                </div>
+              </a>
+            </div>
+          </div>
+
+          {/* CARD 4 */}
+          <div
+            className="homePage__posters-card2"
+            style={{
+              backgroundImage: `url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_350,ar_1.164,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/four-square-card/glass-blue-trainers-2.png")`,
+            }}
+          >
+            <div className="homePage__posters-card2_text">
+              <a href="/transform">
+                <div className="homePage__posters-card2_text-titleText">
+                  <h3>Personal Trainer</h3>
+                  <div className="homePage__posters-card2_text-titleText-icon">
+                    <img
+                      src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_40,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/four-square-card/glass-circle-arrow.svg"
+                      alt="arrow"
+                    />
+                  </div>
+                </div>
+
+                <div className="homePage__poster-card2_text-subText">
+                  At-Home personalized workouts with the best of cult trainers
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* POSTER CARDS ENDS */}
+
+      {/* WELLNESS HUB STARTS */}
+
+      <div className="homePage__wellnesshub-container">
+        <div className="homePage__wellnesshub-container_text-box">
+          <div className="homePage__wellnesshub-container_text-box_title">
+            <h4>Wellness Hub</h4>
+            <p>One place for all your well-being needs</p>
+          </div>
+          <div className="homePage__wellnesshub-container_text-box_options">
+            <div>WORKOUT GEAR</div>
+            <div>CONSULT ONLINE</div>
+            <div>LABS</div>
+            <div>THERAPY</div>
+          </div>
+        </div>
+
+        <div className="homePage__wellnesshub-container_img-box"></div>
+      </div>
+
+      {/* WELLNESS HUB ENDS */}
+
+      {/* DOWNLOAD APP STARTS */}
+      <div className="download_container-ks">
+        <div className="homePage__download-container">
+          <div className="homePage__download-container-title">
+            <h3>Download the most loved fitness app</h3>
+            <p>Start your fitness journey with us. Join the Cult!</p>
+          </div>
+
+          <div className="homePage__download-container-img">
+            <img
+              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,h_50,ar_2.98,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/download-app/app-store-dark-card-2.png"
+              alt=""
+            />
+            <img
+              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,h_50,ar_3.31,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/download-app/play-store-dark-card-2.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      {/* DOWNLOAD APP ENDS */}
     </div>
   );
 };
 
+AOS.init({ offset: 300, duration: 2000 });
 export default Home;

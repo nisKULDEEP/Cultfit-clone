@@ -26,8 +26,10 @@ const Store = () => {
   ) : (
     <div>
       <Navbar path="store" />
-      {/* Start coding from here */}
-      Store Page
+      <div className="store-body" style={{ paddingTop: "60px" }}>
+        {/* Start coding from here */}
+        Store Page
+      </div>
     </div>
   );
 };

@@ -11,8 +11,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  z-index: 1;
+  position: fixed;
+  z-index: 2000;
   font-family: "Roboto", sans-serif;
   // font-weight: 500;
 

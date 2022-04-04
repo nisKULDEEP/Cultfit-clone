@@ -26,8 +26,11 @@ const Mind = () => {
   ) : (
     <div>
       <Navbar path="mind" />
-      {/* Start coding from here */}
-      Mind Page
+
+      <div className="mind-body" style={{ paddingTop: "60px" }}>
+        {/* Start coding from here */}
+        Mind Page
+      </div>
     </div>
   );
 };
