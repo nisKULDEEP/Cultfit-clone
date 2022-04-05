@@ -27,7 +27,10 @@ const Fitness = () => {
     <div>
       <Navbar path="fitness" />
       {/* Start coding from here */}
-      Fitness Page
+      <div className="fitness-body" style={{ paddingTop: "60px" }}>
+        {/* Start coding from here */}
+        Fitness Page
+      </div>
     </div>
   );
 };
