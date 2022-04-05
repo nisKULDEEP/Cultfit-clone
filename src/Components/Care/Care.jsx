@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
+import ImageSlider from "./ImageSlider";
+import { SliderData } from "./SliderData";
+import Specialities from "./Specialities";
+
 
 const Care = () => {
   const [loading__Status, setLoading__Status] = useState(true);
+
 
   useEffect(() => {
     let setIntervalId = setInterval(() => {
@@ -13,6 +18,8 @@ const Care = () => {
       clearInterval(setIntervalId);
     };
   }, []);
+
+  
 
   return loading__Status ? (
     <div className="loading__Screen">
@@ -26,7 +33,9 @@ const Care = () => {
     <div>
       <Navbar path="care" />
       {/* Start coding from here */}
-      Care Page
+
+      <ImageSlider slides={SliderData}  />
+      <Specialities />
     </div>
   );
 };
