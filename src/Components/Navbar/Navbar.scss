@@ -11,8 +11,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  z-index: 1;
+  position: fixed;
+  z-index: 100;
   font-family: "Roboto", sans-serif;
   // font-weight: 500;
 
@@ -222,7 +222,18 @@
     font-weight: 500;
   }
 
+
+
 }
+
+
+.login__popup {
+  position: absolute;
+  top: 60px;
+  left: calc(50% - 200px);
+}
+
+
 
 .m-nav {
   background-image: linear-gradient(
@@ -268,9 +279,9 @@
   .navbar__cart-location-name select{
     font-size: 16px;
     background-color: transparent;
-      option:hover {
+      // option:hover {
          
-      }
+      // }
   }
 }
 
