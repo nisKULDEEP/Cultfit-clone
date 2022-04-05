@@ -1,5 +1,14 @@
 import "./App.scss";
-import { Navbar, Home, Care, Store, Mind, Fitness, Footer } from "./Components";
+import {
+  Navbar,
+  Home,
+  Care,
+  Store,
+  Mind,
+  Fitness,
+  Footer,
+  Login,
+} from "./Components";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -12,6 +21,7 @@ function App() {
         <Route path="/care" element={<Care />} />
         <Route path="/mind" element={<Mind />} />
         <Route path="/store" element={<Store />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />
     </div>

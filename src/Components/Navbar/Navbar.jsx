@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
+import Login from "../Login/Login";
 
 const Navbar = (path) => {
   path = path.path;
+
+  const [showLogin, setShowLogin] = useState(false);
 
   return (
     <>
@@ -151,7 +154,10 @@ const Navbar = (path) => {
           <div className="navbar__cart-button">
             <button>GET APP</button>
           </div>
-          <div className="navbar__cart-profile">
+          <div
+            className="navbar__cart-profile"
+            onClick={() => setShowLogin(!showLogin)}
+          >
             <img
               src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_26,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/header/Profile.png"
               alt="profile"
@@ -165,6 +171,7 @@ const Navbar = (path) => {
             />
           </div>
         </div>
+        <div className="login__popup">{showLogin && <Login />}</div>
       </div>
       <div className="m-nav">
         <div className="m-nav__hamburgar">
