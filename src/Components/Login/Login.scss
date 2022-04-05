@@ -1,0 +1,95 @@
+.login{
+    animation: 0.5s ease-out 0s 1 normal none running animation-jvw5ve;
+    z-index: 5;
+    max-height: calc(100% - 64px);
+    height: auto;
+    width: 400px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 23px;
+box-shadow:  -14px -14px 28px #2b2b2b,
+             14px 14px 28px #3b3b3b;
+    &__cancel{
+        font-size: 20px;
+        text-align: end;
+    }
+
+    &__logo{
+        // border: 1px solid red;
+        text-align: center;
+        img{
+            width: 200px;
+        }
+    }
+
+    &__mobile{
+        margin: 10px 0;
+        input{
+            width: 100%;
+            height: 40px;
+            background-color: black;
+            border: none;
+            border-bottom: 0.5px solid white;
+            padding: 0 10px;
+            color: white;
+            font-size: 20px;
+
+        }
+    }
+
+    &__button{
+        margin: 10px 0 30px 0;
+        button{
+            width: 100%;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            background-color: aliceblue;
+            // font: 26px;
+            font-weight: 700;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(188, 188, 188);
+            }
+        }
+    }
+
+        &__social{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px 0 30px 0;
+            background-color: rgb(35, 35, 35);
+            padding: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+            &-img{
+                font-size: 20px;
+                width: 30%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            &:hover {
+                background-color: rgb(82, 82, 83);
+            }
+        }
+
+    &__tc{
+        margin: 10px 0 30px 0;
+        font-size: 10px;
+        span{
+            cursor: pointer;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+
+}
