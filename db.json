@@ -1,0 +1,108 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Rubber Workout Mat",
+      "price": 4409,
+      "oldprice": 6299,
+      "imageUrl" : ["https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/VLSrJS6rNY2wmNgdjcT7Rz9J", "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/m2JC9aNn8Q3CqZ8gY69au78o"],
+      "desc": "Plank it, down-ward dog it or cart-wheel it - there's nothing this Workout Mat cannot handle. Made out of durable rubber, this anti-slip mat is perfect for all kinds of workout from weight training to cardio. The shock proof material makes it apt for at-home equipment training by shielding your floors from damage and weathering due to high-impact activities even when you have your shoes on. If you're looking for a long-lasting training partner for your in-door training sessions, this one won't disappoint.",
+      "details": [
+        "Colour: Black",
+        "Material : Rubber",
+        "Suitable for : Heavy equipment training",
+        "All workouts",
+        "Size Dimension: 183cmx122cmx1cm, Thickness: 10mm"
+      ],
+      "fabric": ["Rubber"],
+      "material": [
+        "Colour: Black",
+        "Material : Rubber",
+
+        "Suitable for : Heavy equipment training",
+
+        " All workouts",
+
+        "Size Dimension: 183cmx122cmx1cm, Thickness: 10mm"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "FlashRun AbsoluteFit Mesh Leggings",
+      "price": 1374,
+      "oldprice": 2499,
+      "imageUrl" : ["https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/Dxnu7UWa9fGvTkyVfZMH8yX7", "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/5imvtBJ4XWpCReWddheh4xGt"],
+      "desc": "Stay dry throughout your run with the sweat wicking FlyDry technology built into the FlashRun AbsoluteFit Mesh Leggings. These are designed to improve your aerodynamics and give you a secure fit so that you can run faster and longer.",
+      "details": [
+        "Colour: Black",
+        "Material : Rubber",
+        "Suitable for : Heavy equipment training",
+        "All workouts",
+        "Size Dimension: 183cmx122cmx1cm, Thickness: 10mm"
+      ],
+      "fabric": ["Rubber"],
+      "material": [
+        "Colour: Black",
+        "Material : Rubber",
+
+        "Suitable for : Heavy equipment training",
+
+        " All workouts",
+
+        "Size Dimension: 183cmx122cmx1cm, Thickness: 10mm"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Rubber Workout Mat",
+      "price": 4409,
+      "oldprice": 6299,
+      "imageUrl" : ["https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/VLSrJS6rNY2wmNgdjcT7Rz9J", "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/m2JC9aNn8Q3CqZ8gY69au78o"],
+      "desc": "Plank it, down-ward dog it or cart-wheel it - there's nothing this Workout Mat cannot handle. Made out of durable rubber, this anti-slip mat is perfect for all kinds of workout from weight training to cardio. The shock proof material makes it apt for at-home equipment training by shielding your floors from damage and weathering due to high-impact activities even when you have your shoes on. If you're looking for a long-lasting training partner for your in-door training sessions, this one won't disappoint.",
+      "details": [
+        "Colour: Black",
+        "Material : Rubber",
+        "Suitable for : Heavy equipment training",
+        "All workouts",
+        "Size Dimension: 183cmx122cmx1cm, Thickness: 10mm"
+      ],
+      "fabric": ["Rubber"],
+      "material": [
+        "Colour: Black",
+        "Material : Rubber",
+
+        "Suitable for : Heavy equipment training",
+
+        " All workouts",
+
+        "Size Dimension: 183cmx122cmx1cm, Thickness: 10mm"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "FlashRun AbsoluteFit Mesh Leggings",
+      "price": 1374,
+      "oldprice": 2499,
+      "imageUrl" : ["https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/Dxnu7UWa9fGvTkyVfZMH8yX7", "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/5imvtBJ4XWpCReWddheh4xGt"],
+      "desc": "Stay dry throughout your run with the sweat wicking FlyDry technology built into the FlashRun AbsoluteFit Mesh Leggings. These are designed to improve your aerodynamics and give you a secure fit so that you can run faster and longer.",
+      "details": [
+        "Colour: Black",
+        "Material : Rubber",
+        "Suitable for : Heavy equipment training",
+        "All workouts",
+        "Size Dimension: 183cmx122cmx1cm, Thickness: 10mm"
+      ],
+      "fabric": ["Rubber"],
+      "material": [
+        "Colour: Black",
+        "Material : Rubber",
+
+        "Suitable for : Heavy equipment training",
+
+        " All workouts",
+
+        "Size Dimension: 183cmx122cmx1cm, Thickness: 10mm"
+      ]
+    }
+  ]
+}
