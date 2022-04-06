@@ -10,8 +10,8 @@ import { login } from "../../Redux/loginDetails/action";
 const Login = () => {
   const [showLogin, setShowLogin] = useState(true);
   const [mobile, setMobile] = useState(+91);
-  const loginDetails = useSelector((store) => store.loginDetails);
-  const loginStatus = useSelector((store) => store.loginStatus);
+  const loginDetails = useSelector((store) => store.loginReducer.loginDetails);
+  const loginStatus = useSelector((store) => store.loginReducer.loginStatus);
   const dispatch = useDispatch();
 
   let handleChange = (e) => {
