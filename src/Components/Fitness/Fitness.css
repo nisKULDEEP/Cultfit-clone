@@ -5,7 +5,7 @@
 
 }  */
 .fitness-body{
-    height: 6250px;
+    height: 6750px;
     font-family: 'Open Sans', sans-serif;
 }
 .pagemain{
@@ -15,8 +15,12 @@
 
 .Fitnesshome{
     border: 1px solid black;
-    height: 2000px;
+    /* height: 100; */
+    /* width: 100%; */
     background-image: url('https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_1550,ar_1.47,q_auto:eco,dpr_1.05,f_auto,fl_progressive/image/vm/d73a1dee-74a3-42f9-b3c0-b33b89f3bcef.jpg');  
+    background-size: contain;
+    background-repeat: no-repeat;
+
 }
 button{
     /* padding-top: 400px; */
