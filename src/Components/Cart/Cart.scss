@@ -21,6 +21,34 @@
     }
 
     &__products{
+        padding: 20px;
         overflow-y: scroll;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        
+        img{
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        h3{
+            margin-bottom: 20px;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+        button {
+            width: 50%;
+            height: 30px;
+            font-weight: 700;  
+            cursor: pointer;  
+            &:hover{
+                color: #DD0285
+            }
+        }
+        
+
     }
 }

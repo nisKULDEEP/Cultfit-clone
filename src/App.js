@@ -9,6 +9,7 @@ import {
   Footer,
   Login,
   Cart,
+  Product,
 } from "./Components";
 
 import { Routes, Route } from "react-router-dom";
@@ -25,6 +26,7 @@ function App() {
         <Route path="/store" element={<Store />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/products/:id" element={<Product />} />
       </Routes>
       <Footer />
     </div>

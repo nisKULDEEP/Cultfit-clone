@@ -233,8 +233,15 @@
 .login__popup {
   position: absolute;
   top: 80px;
-  z-index: 800;
+  z-index: 3000;
   left: calc(50% - 200px);
+}
+
+.cart__popup{
+  position: absolute;
+  top: 60px;
+  right: 5px;
+  z-index: 2000;
 }
 
 
