@@ -1,22 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
-<<<<<<< HEAD
 
 import ImageSlider from "./ImageSlider";
 import { SliderData } from "./SliderData";
 import Specialities from "./Specialities";
 
-=======
-import ImageSlider from "./ImageSlider";
-import { SliderData } from "./SliderData";
-import Specialities from "./Specialities";
->>>>>>> 25682d4f5d30c4b468443f8e304fec0b64afd8a3
 import "./Care.scss";
-
 
 const Care = () => {
   const [loading__Status, setLoading__Status] = useState(true);
-
 
   useEffect(() => {
     let setIntervalId = setInterval(() => {
@@ -27,8 +19,6 @@ const Care = () => {
       clearInterval(setIntervalId);
     };
   }, []);
-
-  
 
   return loading__Status ? (
     <div className="loading__Screen">
@@ -41,17 +31,6 @@ const Care = () => {
   ) : (
     <div>
       <Navbar path="care" />
-<<<<<<< HEAD
-
-
-    
-=======
-
-      {/* Start coding from here */}
-
-      <ImageSlider slides={SliderData}  />
-      <Specialities />
->>>>>>> 25682d4f5d30c4b468443f8e304fec0b64afd8a3
 
       <div className="care-body" style={{ paddingTop: "60px" }}>
         <div className="storeNav">
@@ -62,10 +41,6 @@ const Care = () => {
         <ImageSlider slides={SliderData} />
         <Specialities />
       </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> 25682d4f5d30c4b468443f8e304fec0b64afd8a3
     </div>
   );
 };
