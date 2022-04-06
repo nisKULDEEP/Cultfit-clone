@@ -4,6 +4,10 @@ import ImageSlider from "./ImageSlider";
 import { SliderData } from "./SliderData";
 import Specialities from "./Specialities";
 import "./Care.scss";
+import SuperSpecialists from "./SuperSpecialists";
+import Experts from "./Experts";
+import FrequntlyAskedQue from "./FrequntlyAskedQue";
+import DoctorsInfo from "./DoctorsInfo";
 
 
 const Care = () => {
@@ -38,11 +42,31 @@ const Care = () => {
 
       <ImageSlider slides={SliderData}  />
       <Specialities />
+      <SuperSpecialists />
+      <Experts />
 
-      <div className="care-body" style={{ paddingTop: "60px" }}>
-        {/* Start coding from here */}
-        Fitness Page
+      {/* quick links start */}
+
+
+
+      <div className="quicklinks">
+          <div className="quicklinks__heading">
+              <h1>Quick Links</h1>
+          </div>
+          <div className="quicklinks__link">
+              <a href="#">Help & Support</a>
+              <hr className="quicklinks__hori"/>
+              <a href="#">Terms & Conditions</a>
+              <hr className="quicklinks__hori" />
+          </div>
       </div>
+
+      <FrequntlyAskedQue />
+      <DoctorsInfo />
+
+
+
+      {/* quick links end */}
     </div>
   );
 };
