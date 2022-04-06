@@ -9,7 +9,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Store = () => {
   const [loading__Status, setLoading__Status] = useState(true);
-
+  const [productsData, setProductsData] = useState([]);
+  // console.log(productsData);
   useEffect(() => {
     let setIntervalId = setInterval(() => {
       setLoading__Status(false);
@@ -18,6 +19,16 @@ const Store = () => {
     return () => {
       clearInterval(setIntervalId);
     };
+  }, []);
+
+  //fetch data from server
+  useEffect(() => {
+    fetch("http://localhost:3004/products")
+      .then((res) => res.json())
+      .then((res) => setProductsData(res))
+      .catch((err) => console.log("SERVER ERROR"));
+
+    return () => {};
   }, []);
 
   var settings = {
@@ -278,6 +289,23 @@ const Store = () => {
               </div>
               <p>Loved by Cult Members</p>
             </div>
+
+            <div className="store__bestsellers_container-product-box"></div>
+            {productsData.map((product) => {
+              return console.log(product);
+              let {
+                id,
+                title,
+                price,
+                oldprice,
+                imageUrl,
+                desc,
+                details,
+                fabric,
+                material,
+              } = product;
+              console.log("HIIII");
+            })}
           </div>
         </div>
         {/* Bestsellers section ends */}

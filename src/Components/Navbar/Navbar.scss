@@ -108,6 +108,7 @@
     align-items: center;
     color: white;
     // width: 30%;
+    cursor: pointer;
 
     &-location {
       display: flex;
@@ -146,6 +147,7 @@
         width: 26px;
         display: flex;
         align-items: center;
+        cursor: pointer;
         img {
           // height: 100%;
           width: 100%;
@@ -188,6 +190,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
 
       img {
         width: 26px;
