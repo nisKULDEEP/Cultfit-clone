@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
+import ImageSlider from "./ImageSlider";
+import { SliderData } from "./SliderData";
+import Specialities from "./Specialities";
+
 import "./Care.scss";
 
 const Care = () => {
@@ -26,10 +30,15 @@ const Care = () => {
   ) : (
     <div>
       <Navbar path="care" />
-
+      {/* Start coding from here */}
       <div className="care-body" style={{ paddingTop: "60px" }}>
-        {/* Start coding from here */}
-        Fitness Page
+        <div className="storeNav">
+          {" "}
+          <n>Online Consult</n>
+          <div>Lab Tests</div>
+        </div>
+        <ImageSlider slides={SliderData} />
+        <Specialities />
       </div>
     </div>
   );
