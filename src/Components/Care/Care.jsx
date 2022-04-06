@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
+
 import ImageSlider from "./ImageSlider";
 import { SliderData } from "./SliderData";
 import Specialities from "./Specialities";
@@ -10,9 +11,10 @@ import FrequntlyAskedQue from "./FrequntlyAskedQue";
 import DoctorsInfo from "./DoctorsInfo";
 
 
+import "./Care.scss";
+
 const Care = () => {
   const [loading__Status, setLoading__Status] = useState(true);
-
 
   useEffect(() => {
     let setIntervalId = setInterval(() => {
@@ -23,8 +25,6 @@ const Care = () => {
       clearInterval(setIntervalId);
     };
   }, []);
-
-  
 
   return loading__Status ? (
     <div className="loading__Screen">
@@ -59,6 +59,14 @@ const Care = () => {
               <a href="#">Terms & Conditions</a>
               <hr className="quicklinks__hori" />
           </div>
+        </div>  
+
+      <div className="care-body" style={{ paddingTop: "60px" }}>
+        <div className="storeNav">
+          {" "}
+          <n>Online Consult</n>
+          <div>Lab Tests</div>
+        </div>
       </div>
 
       <FrequntlyAskedQue />

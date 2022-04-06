@@ -1,0 +1,54 @@
+.cart-body{
+    height: 80vh;
+    width: 300px;
+    border: 1px solid red;
+    background-color: #171A26;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+
+    div:nth-child(1){
+        font-size: 20px;
+        font-weight: 500;
+        padding-bottom: 10px;
+    }
+
+    
+    div:nth-child(2){
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    &__products{
+        padding: 20px;
+        overflow-y: scroll;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        
+        img{
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        h3{
+            margin-bottom: 20px;
+        }
+        p{
+            margin-bottom: 20px;
+        }
+        button {
+            width: 50%;
+            height: 30px;
+            font-weight: 700;  
+            cursor: pointer;  
+            &:hover{
+                color: #DD0285
+            }
+        }
+        
+
+    }
+}

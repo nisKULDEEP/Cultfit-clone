@@ -6,10 +6,12 @@ import Faq from "react-faq-component";
 import "./Store.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 const Store = () => {
   const [loading__Status, setLoading__Status] = useState(true);
-
+  const [productsData, setProductsData] = useState([]);
+  // console.log(productsData);
   useEffect(() => {
     let setIntervalId = setInterval(() => {
       setLoading__Status(false);
@@ -18,6 +20,16 @@ const Store = () => {
     return () => {
       clearInterval(setIntervalId);
     };
+  }, []);
+
+  //fetch data from server
+  useEffect(() => {
+    fetch("http://localhost:3004/products")
+      .then((res) => res.json())
+      .then((res) => setProductsData(res))
+      .catch((err) => console.log("SERVER ERROR"));
+
+    return () => {};
   }, []);
 
   var settings = {
@@ -277,6 +289,34 @@ const Store = () => {
                 <div>See all &#62; </div>
               </div>
               <p>Loved by Cult Members</p>
+            </div>
+
+            <div className="store__bestsellers_container-product-box">
+              {productsData.map(
+                ({
+                  id,
+                  title,
+                  price,
+                  oldprice,
+                  imageUrl,
+                  desc,
+                  details,
+                  fabric,
+                  material,
+                }) => (
+                  <div className="store__productCard" key={id}>
+                    <Link to={`/products/${id}`} id="store__productCard-link">
+                      <img src={imageUrl[0]} alt="" />
+                      <h3>{title}</h3>
+                      <div className="store__productCard-priceBox">
+                        <h3>₹{price}</h3>
+                        <p>₹{oldprice}</p>
+                        <h4>35% Off</h4>
+                      </div>
+                    </Link>
+                  </div>
+                )
+              )}
             </div>
           </div>
         </div>
