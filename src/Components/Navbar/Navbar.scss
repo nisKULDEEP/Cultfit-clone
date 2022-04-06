@@ -229,7 +229,8 @@
 
 .login__popup {
   position: absolute;
-  top: 60px;
+  top: 80px;
+  z-index: 800;
   left: calc(50% - 200px);
 }
 

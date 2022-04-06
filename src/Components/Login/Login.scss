@@ -1,6 +1,7 @@
 .login{
     animation: 0.5s ease-out 0s 1 normal none running animation-jvw5ve;
-    z-index: 5;
+    position: relative;
+    z-index: 6000;
     max-height: calc(100% - 64px);
     height: auto;
     width: 400px;
