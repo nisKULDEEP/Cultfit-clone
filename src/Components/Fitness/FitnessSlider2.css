@@ -5,3 +5,6 @@
     padding: 0px 40px 0px 40px;
     /* border: 1px solid red; */
 }
+.imgslide > img{
+    width: 100%;
+}

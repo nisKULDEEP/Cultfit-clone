@@ -1,0 +1,34 @@
+.mind-nav{
+    background-color: #393a3b ;
+    color: #808181;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif; ;
+    /* padding: 10px; */
+    box-sizing: border-box;
+    justify-content: center;
+    /* padding-left: 400px; */
+}
+
+.mind-link {
+    text-decoration: none;
+    color: rgb(179, 179, 180);
+    padding: 0px 40px;
+    font-size: 15px;
+    font-weight: 500;
+    justify-content: center;
+    object-position: center;
+}
+.mind-link-btn{
+    background-color: black;
+    color: #cecece; ;
+    font-size: 15px;
+    /* padding: 10px; */
+  font-weight: 500;
+  height: 45px;
+  outline: none;
+  border: none;
+  margin-top: 32px;
+  width: 120px;
+}
