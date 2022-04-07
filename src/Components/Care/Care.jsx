@@ -35,8 +35,15 @@ const Care = () => {
       />
     </div>
   ) : (
-    <div>
+    <div className="care_page">
       <Navbar path="care" />
+      <div className="care-body" style={{  }}>
+        <div className="storeNav">
+          {" "}
+          <n>Online Consult</n>
+          <div>Lab Tests</div>
+        </div>
+      </div>
 
       {/* Start coding from here */}
 
@@ -60,14 +67,6 @@ const Care = () => {
               <hr className="quicklinks__hori" />
           </div>
         </div>  
-
-      <div className="care-body" style={{ paddingTop: "60px" }}>
-        <div className="storeNav">
-          {" "}
-          <n>Online Consult</n>
-          <div>Lab Tests</div>
-        </div>
-      </div>
 
       <FrequntlyAskedQue />
       <DoctorsInfo />
