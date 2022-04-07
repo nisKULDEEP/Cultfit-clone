@@ -37,7 +37,7 @@ const Care = () => {
   ) : (
     <div className="care_page">
       <Navbar path="care" />
-      <div className="care-body" style={{ paddingTop: "60px" }}>
+      <div className="care-body" style={{  }}>
         <div className="storeNav">
           {" "}
           <n>Online Consult</n>
