@@ -7,6 +7,7 @@ import "./Store.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 const Store = () => {
   const [loading__Status, setLoading__Status] = useState(true);
@@ -340,6 +341,7 @@ const Store = () => {
         {/* FAQ Section ends */}
         {/* store body ends */}
       </div>
+      <Footer />
     </div>
   );
 };

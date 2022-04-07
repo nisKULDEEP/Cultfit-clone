@@ -1,6 +1,6 @@
 .product-body {
   width: 90%;
-  // padding: 80px auto 0 auto;
+  padding-top: 60px;
   font-family: "Open Sans", sans-serif;
   margin: auto;
   &_container {
@@ -10,6 +10,7 @@
     margin: 20px 0;
     @media screen and (max-width: 769px) {
         flex-direction: column;
+        padding-top: 0;
     }
 
     &-imgBox {
