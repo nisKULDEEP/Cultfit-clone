@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import "./Slider.css";
+import "./FitnessSlider.css";
 
 export default class SimpleSlider extends Component {
   render() {

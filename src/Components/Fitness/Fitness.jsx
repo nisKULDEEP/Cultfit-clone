@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 // import "./Fitness.scss";
 import "./Fitness.css"
-import SimpleSlider from './Slider';
-import SimpleSlider2 from './Slider2';
+import SimpleSlider from './FitnessSlider';
+import SimpleSlider2 from './FitnessSlider2';
 import { Navbar2 } from "./Navbar2";
 
 const Fitness = () => {
