@@ -5,7 +5,7 @@
 
 }  */
 .fitness-body{
-    height: 6750px;
+    height: 6390px;
     font-family: 'Open Sans', sans-serif;
 }
 .pagemain{
@@ -64,6 +64,9 @@ button{
 .line1{
     font-size: 20px;
     margin-bottom: 10px;
+}
+.line1 > img{
+  width: 100%;
 }
 .line2  {
     font-size: 40px;
