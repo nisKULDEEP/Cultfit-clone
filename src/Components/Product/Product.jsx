@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 
 import { addToCart } from "../../Redux/cart/action";
 import { useDispatch, useSelector } from "react-redux";
+import Footer from "../Footer/Footer";
 const Product = () => {
   const [loading__Status, setLoading__Status] = useState(true);
   const [productsData, setProductsData] = useState({
@@ -21,12 +22,16 @@ const Product = () => {
   const cartDetails = useSelector((cart) => cart.addToCartReducer);
   const dis = useDispatch();
   const { id } = useParams();
+  const loginStatus = useSelector((status) => status.loginReducer.loginStatus);
+
+  // console.log(loginStatus);
 
   // console.log(productsData.imageUrl[0]);
-  console.log(cartDetails);
 
   const handleAddToCart = () => {
-    dis(addToCart(productsData));
+    loginStatus == false
+      ? alert("PLEASE LOG IN FIRST")
+      : dis(addToCart(productsData));
   };
 
   useEffect(() => {
@@ -59,7 +64,7 @@ const Product = () => {
     <div>
       <Navbar path="fitness" />
 
-      <div className="product-body" style={{ paddingTop: "60px" }}>
+      <div className="product-body">
         <div className="product-body_container">
           <div className="product-body_container-imgBox">
             <img src={productsData.imageUrl[0]} alt="p" />
@@ -81,6 +86,7 @@ const Product = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

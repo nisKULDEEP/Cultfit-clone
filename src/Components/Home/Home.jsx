@@ -3,6 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import "./Home.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   const [loading__Status, setLoading__Status] = useState(true);
@@ -592,6 +593,7 @@ const Home = () => {
         </div>
       </div>
       {/* DOWNLOAD APP ENDS */}
+      <Footer />
     </div>
   );
 };

@@ -1,0 +1,50 @@
+.checkout-body{
+padding-top: 60px;
+// font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+&__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // border: 1px solid red;
+    padding: 30px;
+
+    &_productDetails{
+        // border: 1px solid red;
+        width: 20%;
+        margin-right: 20px;
+    }
+    &_personalDetails{
+        // border: 1px solid red;
+        input{
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+
+        }
+        h1{
+            color: #DD0285
+        }
+        button{
+            width: 45%;
+            border: none;
+            border-radius: 25px;
+            background-color: #DD0285;
+            font-weight: 500;
+            color: white;
+
+        }
+        .btns{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+    }
+   
+}
+}
+.checkout-img{
+    width: 100%;
+}
