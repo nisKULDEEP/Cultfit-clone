@@ -5,7 +5,7 @@
     rgba(23, 26, 38, 0.0001)
   );
   // background-color:#15171C;
-  width: 100%;
+  width: 99vw;
   height: 60px;
   display: flex;
   flex-direction: row;
@@ -13,6 +13,9 @@
   justify-content: space-between;
   position: fixed;
   z-index: 100;
+  left: 0;
+  right: 0;
+  top:0;
   font-family: "Roboto", sans-serif;
   // font-weight: 500;
 
@@ -247,7 +250,7 @@
 .disclaimer__popup{
   position: fixed;
   bottom: 0;
-  right: 0;
+  left: 10px;
   background-color: #DD0285;
   padding: 5px;
   border-radius: 10px;
