@@ -1,11 +1,11 @@
 .care_page{
     font-family: 'Open Sans', sans-serif;
-
 }
 
 .care-body{
     width: 100%;
-    padding-top: 3.8%
+    padding-top: 3.8%;
+    position: sticky;
 }
 
 @media screen and (max-width: "1024px") {
@@ -25,7 +25,6 @@
 
 
 .slider{
-    position: relative;
     // height: 100vh;
     display: flex;
     justify-content: center;
@@ -41,66 +40,7 @@
         margin-top: 3%;
     }
 
-    &__right-arrow{
-        position: absolute;
-        top:100%;
-        margin-top: 1%;
-        right: 9%;
-        font-size: 3rem;
-        color: #000;
-        z-index: 10;
-        cursor: pointer;
-        user-select: none;
-        width: 25px;
-    }
-    &__left-arrow{
-        position: absolute;
-        top:100%;
-        left: 86%;
-        margin-top: 1%;
-        font-size: 3rem;
-        color: #000;
-        z-index: 10;
-        cursor: pointer;
-        user-select: none;
-        width: 25px;
-    }
-    &__circle1{
-        position: absolute;
-        top:100%;
-        left: 11%;
-        margin-top: 1%;
-        font-size: 3rem;
-        color: #000;
-        z-index: 10;
-        cursor: pointer;
-        user-select: none;
-        width: 10px;
-    }
-    &__circle2{
-        position: absolute;
-        top:100%;
-        left: 14%;
-        margin-top: 1%;
-        font-size: 3rem;
-        color: #000;
-        z-index: 10;
-        cursor: pointer;
-        user-select: none;
-        width: 10px;
-    }
-    &__circle3{
-        position: absolute;
-        top:100%;
-        left: 17%;
-        margin-top: 1%;
-        font-size: 3rem;
-        color: #000;
-        z-index: 10;
-        cursor: pointer;
-        user-select: none;
-        width: 10px;
-    }
+    
 
     @media screen and (max-width: "1024px") {
         font-size: 10px;
@@ -121,65 +61,18 @@
             border-radius: 10px;
             margin-top: 3%;
         }
-
-        &__right-arrow{
-            position: absolute;
-            top:100%;
-            margin-top: 1%;
-            right: 9%;
-            font-size: 3rem;
-            color: #000;
-            z-index: 10;
-            cursor: pointer;
-            user-select: none;
-            width: 25px;
-        }
-        &__left-arrow{
-            position: absolute;
-            top:100%;
-            left: 80%;
-            margin-top: 1%;
-            font-size: 3rem;
-            color: #000;
-            z-index: 10;
-            cursor: pointer;
-            user-select: none;
-            width: 25px;
-        }
       }
     
 
 }
 
-.slide{
-    opacity: 0;
-    transition-duration: 1s ease ;
-}
-
-.slide.active{
-    opacity: 1;
-    transition-duration: 1s;
-    transform: scale(1.08);
-}
-
-.w3-button{
-    background-color: aqua;
-    width: 100px;
-}
-
-
-
-// .specialities__images{
-//     display: flex;
-//     flex-direction: column;
-// }
-
 .specialities{
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 10%;
     margin-bottom: 10%;
+    // border: 1px solid black;
 
     &__IndImage{
         width: 150px;
@@ -236,13 +129,14 @@
         width: 80%;
         font-size: 10px;
         font-weight: 500;
+        margin-left: 15%;
 
         &__IndImage{
             width: 120px;
             // height: 279px;
             // height:  50%;
             border-radius: 5%;
-            margin: 2% 2%;
+            margin: 3% 4%;
             
            
         }
@@ -250,6 +144,9 @@
             opacity: 1;
             transition-duration: 0.5s;
             transform: scale(0.88);
+        }
+        &__para{
+            font-size: 13px;
         }
       }
 }
@@ -318,13 +215,14 @@
         width: 80%;
         font-size: 10px;
         font-weight: 500;
+        margin-left: 15%;
 
         &__IndImage{
             width: 120px;
             // height: 279px;
             // height:  50%;
             border-radius: 5%;
-            margin: 2% 2%;
+            margin: 3% 4%;
             
            
         }
@@ -332,6 +230,9 @@
             opacity: 1;
             transition-duration: 0.5s;
             transform: scale(0.88);
+        }
+        &__para{
+            font-size: 13px;
         }
       }
 }
