@@ -587,13 +587,20 @@
 .storeNav{
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
+    height: 60px;
     font-weight: 700;
     position: sticky;
+    flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
     top: 0;
     left: 0;
     right: 0;
     z-index: 300;
     transition: 1s ease-in-out;
+
+
 
     n{
         display: flex;

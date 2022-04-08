@@ -139,7 +139,7 @@ const Navbar = (path) => {
           <div className="navbar__cart-location">
             <div className="navbar__cart-location-name">
               <select name="location" id="navbar__cart-location-name-select">
-                <option value="banglore">Banglore</option>
+                <option value="bangalore">Bangalore</option>
                 <option value="Delhi">Delhi</option>
                 <option value="Hyderabad">Hyderabad</option>
                 <option value="Mumbai">Mumbai</option>
@@ -178,6 +178,9 @@ const Navbar = (path) => {
         </div>
         <div className="login__popup">{showLogin && <Login />}</div>
         <div className="cart__popup">{showCart && <Cart />}</div>
+        <div className="disclaimer__popup">
+          It’s a project for educational purpose only and not commercial purpose
+        </div>
       </div>
       <div className="m-nav">
         <div className="m-nav__hamburgar">

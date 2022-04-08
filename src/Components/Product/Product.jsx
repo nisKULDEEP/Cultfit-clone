@@ -78,10 +78,56 @@ const Product = () => {
               <off>40% Off</off>
             </div>
             <dec>{productsData.desc}</dec>
+            <div className="product-body_container-textBox_sizeBox">
+              <div className="product-body_container-textBox_sizeBox-title">
+                Choose Size
+              </div>
+              <div className="product-body_container-textBox_sizeBox-size">
+                <div>S</div>
+                <div>M</div>
+                <div>L</div>
+                <div>XL</div>
+                <div>XXL</div>
+              </div>
+            </div>
+
             <div className="product-body_container-textBox-btn">
               {" "}
               <button onClick={() => handleAddToCart()}>Add to Cart</button>
               <button>View Cart</button>
+            </div>
+
+            <div className="product-body_container-textBox-productDetails">
+              <div className="product-body_container-textBox-productDetails-title">
+                PRODUCT DETAILS
+              </div>
+              <ul className="product-body_container-textBox-productDetails-list">
+                {productsData.details.map((e) => {
+                  return <li>{e}</li>;
+                })}
+              </ul>
+            </div>
+            <div className="product-body_container-textBox-pincode">
+              <div className="pincode-container">
+                <input type="number" />
+                <div>CHECK</div>
+              </div>
+              <ul>
+                <li>Free delivery within 5-7 days</li>
+                <li> Easy 30 days return available</li>
+                <li>30 days exchange available</li>
+                <li>30 days exchange available</li>
+              </ul>
+            </div>
+            <div className="product-body_container-textBox-materialBox">
+              <div className="product-body_container-textBox-materialBox-title">
+                Material and Care
+              </div>
+              <ul className="product-body_container-textBox-materialBox-list">
+                {productsData.material.map((e) => {
+                  return <li>{e}</li>;
+                })}
+              </ul>
             </div>
           </div>
         </div>

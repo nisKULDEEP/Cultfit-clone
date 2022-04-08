@@ -4,6 +4,7 @@ import "./Home.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "../Footer/Footer";
+import Slide from "./Slide";
 
 const Home = () => {
   const [loading__Status, setLoading__Status] = useState(true);
@@ -554,7 +555,9 @@ const Home = () => {
       {/* WELLNESS HUB STARTS */}
 
       <div className="homePage__wellnesshub-container">
-        <div className="homePage__wellnesshub-container_text-box">
+        <Slide />
+
+        {/* <div className="homePage__wellnesshub-container_text-box">
           <div className="homePage__wellnesshub-container_text-box_title">
             <h4>Wellness Hub</h4>
             <p>One place for all your well-being needs</p>
@@ -567,7 +570,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="homePage__wellnesshub-container_img-box"></div>
+        <div className="homePage__wellnesshub-container_img-box"></div> */}
       </div>
 
       {/* WELLNESS HUB ENDS */}
