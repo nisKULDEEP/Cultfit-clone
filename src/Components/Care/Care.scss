@@ -8,7 +8,7 @@
     // padding-top: 3.8%;
     position: sticky;
     padding-top: 60px;
-    border: 1px solid black;
+    // border: 1px solid black;
 }
 
 @media screen and (max-width: "1024px") {
@@ -23,6 +23,10 @@
         width: 100%;
         padding-top: 0%;
        }
+}
+
+.store__sliderContainer{
+    width: 100%;
 }
 
 
@@ -69,16 +73,45 @@
 
 }
 
+.slide{
+    opacity: 0;
+    transition-duration: 1s ease ;
+}
+
+.slide.active{
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+
+.w3-button{
+    background-color: aqua;
+    width: 100px;
+}
+
+.careBody{
+    // border: 1px solid red;
+    
+}
+
+// .specialities__images{
+//     display: flex;
+//     flex-direction: column;
+// }
+
 .specialities{
     width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+// border: 1px solid red;
+// display: flex;
+// flex-direction: column;
+// justify-content: center;
 
     &__IndImage{
-        width: 150px;
+        width: 20%;
         // height: 279px;
         // height:  50%;
         border-radius: 5%;
@@ -96,6 +129,7 @@
        display: flex;
        flex-direction: row;
        flex-wrap: wrap;
+       justify-content: center;
     }
     &__heading{
         height: 90px;
@@ -132,7 +166,7 @@
         width: 80%;
         font-size: 10px;
         font-weight: 500;
-        margin-left: 15%;
+        margin-left: 13%;
 
         &__IndImage{
             width: 120px;
@@ -160,11 +194,11 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
     &__IndImage{
-        width: 150px;
+        width: 20%;
         // height: 279px;
         // height:  50%;
         border-radius: 5%;
@@ -247,27 +281,55 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0%;
-    margin-bottom: 10%;
+    margin-top: 20px;
+    margin-bottom: 50px;
     // border: 1px solid black;
 
+    &__images{
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media screen and (max-width: 769px) {
+            flex-direction: column;
+        }
+
+    }
     &__IndImage{
-        width: 80%;
-        height: 250px;
-        border-radius: 5%;
+        width: 90%;
+        // height: 250px;
+        border-radius: 25px;
+        // border: 1px solid black;
+        // padding: 20px;
+    }
+    .expert__image1{
+        position: relative;
+        // margin-right: 5%;
+        @media screen and (max-width: 769px) {
+            margin-right: 0%;
+        }
+    }
+    .expert__image2{
+        position: relative;
+        // margin-right: 5%;
+        @media screen and (max-width: 769px) {
+            margin-right: 0%;
+        }
     }
     &__images{
-        display: flex;
+        // display: flex;
             // grid-template-columns: 12% 12%;
             // gap: 25%;
-            justify-content: center;
-            margin-left: 1%;
-            flex-wrap: wrap;
+            // justify-content: center;
+            // margin-left: 1%;
+            // flex-wrap: wrap;
             // margin-right: 2%;
             // border: 1px solid black;
     }
     &__heading{
         height: 90px;
+        // border: 1px solid black;
     }
     &__para{
         color: grey;
@@ -275,13 +337,14 @@
         font-size: 18px;
     }
     &__img2{
-        margin-left: -10%;
+        // margin-left: -10%;
     }
     &__head1{
         margin-top: -40%;
     }
     &__text1{
         // margin-top: -140%;
+        // border: 1px solid black;
         width: 500px;
         margin-left: 1%;
     }
@@ -289,11 +352,13 @@
         font-size: 23px;
         color: rgb(240, 235, 235);
         line-height: 20px;
+        // border: 1px solid black;
     }
     &__para1{
         color: rgb(47, 46, 46);
         font-size: 14px;
         line-height: 20px;
+        // border: 1px solid black;
     }
     &__para2{
         color: rgb(47, 46, 46);
@@ -312,7 +377,9 @@
     &__text2{
         // margin-top: -140%;
         width: 500px;
-        margin-left: -6%;
+        // margin-left: -6%;
+        // border: 1px solid black;
+        // padding: ;
     }
 
     @media screen and (max-width: "1400px") {
@@ -491,13 +558,20 @@
 .storeNav{
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
+    height: 60px;
     font-weight: 700;
     position: sticky;
+    flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
     top: 0;
     left: 0;
     right: 0;
     z-index: 300;
     transition: 1s ease-in-out;
+
+
 
     n{
         display: flex;
