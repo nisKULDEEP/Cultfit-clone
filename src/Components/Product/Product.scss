@@ -89,6 +89,79 @@
             flex-direction: column;
         }
       }
+      &_sizeBox{
+        &-title{
+          // border: #dd0285 1px solid;
+          display: flex;
+          flex-direction: row;
+          font-size: 14px;
+          margin: 10px 0;
+        
+        }
+        &-size{
+          display: flex;
+          flex-direction: row;
+          
+          div{
+            padding: 10px 25px;
+            margin: 5px;
+            cursor: pointer;
+            &:hover{
+              border: 0.5px solid rgb(160, 160, 42);
+              border-radius: 20px;
+
+            }
+          }
+        }
+      }
+      &-productDetails{
+        color: rgb(106, 104, 104);
+        &-title{
+          display: flex;
+          flex-direction: row;
+          font-size: 16px;
+          margin: 10px 0;
+          font-weight: 700;
+        }
+        &-list{
+          font-size: 12px;
+        }
+
+      }
+
+      &-pincode{
+        .pincode-container{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          border-bottom:1px solid black ;
+          input{
+            width: 80%;
+            border:none;
+            padding: 10px 5px ;
+          }
+          &:nth-child(1){
+            color: #dd0285;
+          }
+        }
+        ul{
+          font-size: 12px;
+        }
+      }
+
+      &-materialBox{
+        color: rgb(106, 104, 104);
+        &-title{
+          display: flex;
+          flex-direction: row;
+          font-size: 16px;
+          margin: 10px 0;
+          font-weight: 700;
+        }
+        &-list{
+          font-size: 12px;
+        }
+      }
     }
   }
 }

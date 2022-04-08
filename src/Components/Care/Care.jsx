@@ -11,8 +11,6 @@ import FrequntlyAskedQue from "./FrequntlyAskedQue";
 import DoctorsInfo from "./DoctorsInfo";
 import { Footer } from "../index";
 
-import "./Care.scss";
-
 const Care = () => {
   const [loading__Status, setLoading__Status] = useState(true);
 

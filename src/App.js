@@ -11,6 +11,7 @@ import {
   Cart,
   Product,
   Checkout,
+  Error,
 } from "./Components";
 
 import { Routes, Route } from "react-router-dom";
@@ -29,6 +30,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/products/:id" element={<Product />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       {/* <Footer /> */}
     </div>
