@@ -44,10 +44,10 @@ const Mind = () => {
         <h2 className="experts">EXPERTS TO HELP YOU</h2>
         <div className="Mind-main-flex">
           <div className="Mind-child-1">
-            <h2>Therapy</h2>
-            <br />
+            <h2 className="firstname">Therapy</h2>
             <p>__</p>
-            <h5 style={{ color: "#3a3b3f" }}>
+            <br/>
+            <h5 className="secondline" style={{ color: "#3a3b3f" }}>
               Expert who help solve emotional problems ₹599
             </h5>
             <p>⏰ 50 Mins Session</p>
@@ -56,13 +56,14 @@ const Mind = () => {
             <br />
             <p>
               {" "}
-              <del>₹1300</del> ₹599
+              <del>₹1300</del> <b style={{fontWeight:600}}>₹599</b>
             </p>
           </div>
           <div className="Mind-child-2">
-            <h2>Couple Therapy</h2>
+            <h2 className="firstname">Couple Therapy</h2>
             <p>__</p>
-            <h5 style={{ color: "#3a3b3f" }}>
+            <br/>
+            <h5 className="secondline" style={{ color: "#3a3b3f" }}>
               Resolve emotional conflicts in relationships and marraiage ₹599
             </h5>
             <p>⏰ 50 Mins Session</p>
@@ -71,14 +72,15 @@ const Mind = () => {
             <br />
             <p>
               {" "}
-              <del>₹1300</del> ₹599
+              <del>₹1300</del> <b style={{fontWeight:600}}>₹599</b>
             </p>
           </div>
 
           <div className="Mind-child-3">
-            <h2>COVID Stress</h2>
+            <h2 className="firstname">COVID Stress</h2>
             <p>__</p>
-            <h5 style={{ color: "#3a3b3f" }}>
+            <br/>
+            <h5 className="secondline" style={{ color: "#3a3b3f" }}>
               Seek expert help from our therapists for coping with isolation and
               <br /> Covid related issues ₹599
             </h5>
@@ -88,14 +90,15 @@ const Mind = () => {
             <br />
             <p>
               {" "}
-              <del>₹1300</del> ₹599
+              <del>₹1300</del> <b style={{fontWeight:600}}>₹599</b>
             </p>
           </div>
 
           <div className="Mind-child-4">
-            <h2>Better Sleep</h2>
+            <h2 className="firstname">Better Sleep</h2>
             <p>__</p>
-            <h5 style={{ color: "#3a3b3f" }}>
+            <br/>
+            <h5 className="secondline" style={{ color: "#3a3b3f" }}>
               Consult with experts to learn effective stratagies for restfull
               sleep and good sleep health ₹599
             </h5>
@@ -105,14 +108,15 @@ const Mind = () => {
             <br />
             <p>
               {" "}
-              <del>₹1300</del> ₹599
+              <del>₹1300</del> <b style={{fontWeight:600}}>₹599</b>
             </p>
           </div>
 
           <div className="Mind-child-5">
-            <h2>Rise to Confidence</h2>
+            <h2 className="firstname">Rise to Confidence</h2>
             <p>__</p>
-            <h5 style={{ color: "#3a3b3f" }}>
+            <br/>
+            <h5 className="secondline" style={{ color: "#3a3b3f" }}>
               Grow into a more confident and self assured person ₹599
             </h5>
             <p>⏰ 50 Mins Session</p>
@@ -121,14 +125,15 @@ const Mind = () => {
             <br />
             <p>
               {" "}
-              <del>₹1300</del> ₹599
-            </p>
+              <del>₹1300</del> <b style={{fontWeight:600}}>₹599</b>
+            </p>₹
           </div>
 
           <div className="Mind-child-6">
-            <h2>Thrive at work</h2>
+            <h2 className="firstname">Thrive at work</h2>
             <p>__</p>
-            <h5 style={{ color: "#3a3b3f" }}>
+            <br/>
+            <h5 className="secondline" style={{ color: "#3a3b3f" }}>
               Make work fullfilling and meaningfull ₹599
             </h5>
             <p>⏰ 50 Mins Session</p>
@@ -137,14 +142,15 @@ const Mind = () => {
             <br />
             <p>
               {" "}
-              <del>₹1300</del> ₹599
+              <del>₹1300</del> <b style={{fontWeight:600}}>₹599</b>
             </p>
           </div>
 
           <div className="Mind-child-7">
-            <h2>Healthy Relationships</h2>
+            <h2 className="firstname">Healthy Relationships</h2>
             <p>__</p>
-            <h5 style={{ color: "#3a3b3f" }}>
+            <br/>
+            <h5 className="secondline" style={{ color: "#3a3b3f" }}>
               Understand your relationship patterns and exploring healty
               relationship ₹599
             </h5>
@@ -154,14 +160,15 @@ const Mind = () => {
             <br />
             <p>
               {" "}
-              <del>₹1300</del> ₹599
+              <del>₹1300</del><b style={{fontWeight:600}}>₹599</b>
             </p>
           </div>
 
           <div className="Mind-child-8">
-            <h2>Transform Your Thinking </h2>
+            <h2 className="firstname">Transform Your Thinking </h2>
             <p>__</p>
-            <h5 style={{ color: "#3a3b3f" }}>
+            <br/>
+            <h5 className="secondline" style={{ color: "#3a3b3f" }}>
               Manage negative or anxious thoughts or overthinking ₹599
             </h5>
             <p>⏰ 50 Mins Session</p>
@@ -170,7 +177,7 @@ const Mind = () => {
             <br />
             <p>
               {" "}
-              <del>₹1300</del> ₹599
+              <del>₹1300</del>  <b style={{fontWeight:600}}>₹599</b>
             </p>
           </div>
         </div>
