@@ -25,12 +25,22 @@
     font: 55px;
     font-weight: 700;
 }
+.secondline{
+    font-size: 12px;
+    font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    color: rgb(64, 64, 64);
+    text-align: left;
+}
 .Mind-main-flex{
     display: flex;
     flex-wrap: wrap;
     gap: 4%;
     row-gap: 8%;
     justify-content: center; 
+}
+.firstname{
+    font-size: 22px;
+    font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto,
 }
 .Mind-child-1{
     border-radius: 10px;
