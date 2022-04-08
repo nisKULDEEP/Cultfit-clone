@@ -37,7 +37,7 @@ const Fitness = () => {
         <Navbar2 />
         <div className="pagemain">
           <div className="Fitnesshome">
-            <button className="btn">TRY FOR FREE</button>
+            <button  className="btn">TRY FOR FREE</button>
             <div className="Offers">
               <div className="box">
                 <p className="line1">cultpass</p>
@@ -64,11 +64,15 @@ const Fitness = () => {
                 <p className="line3">Starting at₹115 / month</p>
               </div>
             </div>
-            <SimpleSlider />
+            <div style={{width:"85%",margin:"auto"}}>
+              <SimpleSlider />
+            </div>
+            {/* <SimpleSlider /> */}
             <div className="secondhalf">
               <p className="para">What you get with cultpass</p>
               <img
                 className="map"
+                style={{width:"80%"}}
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1439,h_648,ar_2.220679012345679,c_fit/dpr_2//image/vm/5553377f-e0a2-4a5d-bd18-b2543163f9a6.png"
                 alt="map"
               />
@@ -101,11 +105,11 @@ const Fitness = () => {
                       color: "white",
                       marginTop: "20px",
                       background: "grey",
-                      width: "150px",
+                      width: "120px",
                       fontWeight: "700",
                     }}
                   >
-                    join
+                    JOIN
                   </button>
                 </div>
               </div>
@@ -217,10 +221,11 @@ const Fitness = () => {
                   </tbody>
                 </table>
               </div>
-              <div className="Elite">
+              <div style={{width:"80%",margin:"auto"}} className="Elite">
                 <div className="EliteContent">
                   <div className="marginleft">
                     <img
+                     
                       className="cp1"
                       src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_200,ar_6.55,q_auto:eco,dpr_1.25,f_auto,fl_progressive//image/test/brand-logo/cult-pass-elite.png"
                       alt="img"
@@ -230,7 +235,6 @@ const Fitness = () => {
                       everything in your city{" "}
                     </p>
                     <p className="cp">Unlimted access to</p>
-                    <p className="cp">✓ At centre group classes</p>
                     <p className="cp">✓ All ELITE & PRO GYMS</p>
                     <p className="cp">✓ At-home live workouts</p>
                     <p className="cp">Starting at ₹1269/month</p>
@@ -240,6 +244,7 @@ const Fitness = () => {
                 </div>
                 <div className="Eliteimg">
                   <img
+                     style={{width:"100%"}}
                     src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_842,ar_1.2,q_auto:eco,dpr_1.25,f_auto,fl_progressive/image/test/sku-card-widget/black2.png"
                     alt="img"
                   />
@@ -249,6 +254,7 @@ const Fitness = () => {
               <div className="PRO">
                 <div className="PROimg">
                   <img
+                    style={{width:"100%"}}
                     src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_842,ar_1.2,q_auto:eco,dpr_1.25,f_auto,fl_progressive/image/test/sku-card-widget/gold2.png"
                     alt="img"
                   />
@@ -276,6 +282,7 @@ const Fitness = () => {
 
               <div className="culttransform">
                 <img
+                  style={{width:"100%"}}
                   src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_750,ar_1738:763/dpr_2/image/vm/c93e221a-607f-4dda-87c5-5b7b4a8662b0.png"
                   alt="img"
                 />

@@ -54,7 +54,6 @@ const Mind = () => {
             <br />
             <br />
             <br />
-            <br />
             <p>
               {" "}
               <del>₹1300</del> ₹599
@@ -67,7 +66,6 @@ const Mind = () => {
               Resolve emotional conflicts in relationships and marraiage ₹599
             </h5>
             <p>⏰ 50 Mins Session</p>
-            <br />
             <br />
             <br />
             <br />
@@ -88,7 +86,6 @@ const Mind = () => {
             <br />
             <br />
             <br />
-            <br />
             <p>
               {" "}
               <del>₹1300</del> ₹599
@@ -103,7 +100,6 @@ const Mind = () => {
               sleep and good sleep health ₹599
             </h5>
             <p>⏰ 50 Mins Session</p>
-            <br />
             <br />
             <br />
             <br />
@@ -123,7 +119,6 @@ const Mind = () => {
             <br />
             <br />
             <br />
-            <br />
             <p>
               {" "}
               <del>₹1300</del> ₹599
@@ -137,7 +132,6 @@ const Mind = () => {
               Make work fullfilling and meaningfull ₹599
             </h5>
             <p>⏰ 50 Mins Session</p>
-            <br />
             <br />
             <br />
             <br />
@@ -158,7 +152,6 @@ const Mind = () => {
             <br />
             <br />
             <br />
-            <br />
             <p>
               {" "}
               <del>₹1300</del> ₹599
@@ -172,7 +165,6 @@ const Mind = () => {
               Manage negative or anxious thoughts or overthinking ₹599
             </h5>
             <p>⏰ 50 Mins Session</p>
-            <br />
             <br />
             <br />
             <br />
