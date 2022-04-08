@@ -7,14 +7,22 @@ import { useNavigate } from "react-router-dom";
 const Cart = () => {
   const navigate = useNavigate();
   const cartDetails = useSelector((cart) => cart.addToCartReducer.payload);
-  console.log(cartDetails);
+  const loginStatus = useSelector((status) => status.loginReducer.loginStatus);
+  // console.log(cartDetails);
+  function redirectToPay() {
+    navigate("/checkout");
+  }
   return (
     <>
       <div className="cart-body">
         <div>Your Cart</div>
         <div>cultsport</div>
         <hr />
-        {cartDetails == undefined ? (
+        {!loginStatus ? (
+          <div style={{ textAlign: "center", fontWeigth: "500" }}>
+            Please Log in first
+          </div>
+        ) : cartDetails == undefined ? (
           <div style={{ textAlign: "center", fontWeigth: "500" }}>
             Cart is empty
           </div>
@@ -25,7 +33,7 @@ const Cart = () => {
             <p>Price: ₹{cartDetails.price}</p>
             <button
               onClick={() => {
-                navigate("/checkout");
+                redirectToPay();
               }}
             >
               PAY NOW

@@ -9,7 +9,7 @@ import SuperSpecialists from "./SuperSpecialists";
 import Experts from "./Experts";
 import FrequntlyAskedQue from "./FrequntlyAskedQue";
 import DoctorsInfo from "./DoctorsInfo";
-
+import { Footer } from "../index";
 
 import "./Care.scss";
 
@@ -37,42 +37,38 @@ const Care = () => {
   ) : (
     <div className="care_page">
       <Navbar path="care" />
-      <div className="care-body" style={{  }}>
+      <div className="care-body" style={{}}>
         <div className="storeNav">
           {" "}
           <n>Online Consult</n>
           <div>Lab Tests</div>
         </div>
-      </div>
 
-      {/* Start coding from here */}
+        {/* Start coding from here */}
 
-      <ImageSlider slides={SliderData}  />
-      <Specialities />
-      <SuperSpecialists />
-      <Experts />
+        <ImageSlider slides={SliderData} />
+        <Specialities />
+        <SuperSpecialists />
+        <Experts />
 
-      {/* quick links start */}
+        {/* quick links start */}
 
-
-
-      <div className="quicklinks">
+        <div className="quicklinks">
           <div className="quicklinks__heading">
-              <h1>Quick Links</h1>
+            <h1>Quick Links</h1>
           </div>
           <div className="quicklinks__link">
-              <a href="#">Help & Support</a>
-              <hr className="quicklinks__hori"/>
-              <a href="#">Terms & Conditions</a>
-              <hr className="quicklinks__hori" />
+            <a href="#">Help & Support</a>
+            <hr className="quicklinks__hori" />
+            <a href="#">Terms & Conditions</a>
+            <hr className="quicklinks__hori" />
           </div>
-        </div>  
+        </div>
 
-      <FrequntlyAskedQue />
-      <DoctorsInfo />
-
-
-
+        <FrequntlyAskedQue />
+        <DoctorsInfo />
+      </div>
+      <Footer />
       {/* quick links end */}
     </div>
   );

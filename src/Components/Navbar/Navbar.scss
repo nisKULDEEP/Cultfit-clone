@@ -232,7 +232,7 @@
 
 .login__popup {
   position: absolute;
-  top: 80px;
+  top: 120px;
   z-index: 3000;
   left: calc(50% - 200px);
 }
@@ -259,8 +259,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  z-index: 1;
+  // position: relative;
+  // z-index: 1;
+  position: fixed;
+  z-index: 100;
   font-family: "Roboto", sans-serif;
   padding: 0 20px;
 

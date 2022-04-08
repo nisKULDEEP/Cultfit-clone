@@ -1,8 +1,19 @@
+.mind-body{
+    padding-top: 60px;
+    width: 100%;
+    /* border: 1px solid red; */
+    @media screen and (max-width: 769px) {
+        /* flex-direction: column; */
+        padding-top: 0;
+    }
+}
+
 .mind-thearapy{
     margin: auto;
     width: 80%;
     /* border: 1px solid red; */
     margin-bottom: 50px;
+    font-family:'Open Sans', sans-serif;;
 }
 .mind-thearapy > img{
     width: 100%;
