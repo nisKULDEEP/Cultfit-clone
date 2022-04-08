@@ -6,7 +6,7 @@ font-family: 'Roboto', sans-serif;
 &__container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     // border: 1px solid red;
     padding: 30px;
 
@@ -23,8 +23,13 @@ font-family: 'Roboto', sans-serif;
             margin: 5px 0;
 
         }
-        h1{
-            color: #DD0285
+        label{
+            font-weight: bold;
+            font-size: 12px;
+        }
+        h2{
+            color: #303030;
+            margin:10px 0;
         }
         button{
             width: 45%;
@@ -41,10 +46,31 @@ font-family: 'Roboto', sans-serif;
             justify-content: space-between;
             margin: 10px 0;
         }
+        .name{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            input{
+                width: 95%;
+            }
+        }
     }
    
 }
 }
 .checkout-img{
     width: 100%;
+}
+
+.checkbox_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+.container{
+    img{
+        width: 100vw;
+        height: 100vh;
+    }
 }

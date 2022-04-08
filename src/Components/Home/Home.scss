@@ -632,77 +632,121 @@
 
 .homePage__wellnesshub-container {
   margin: 0 10%;
-  padding: 10% 5%;
+  padding: 5%;
   width: 80%;
   // border: 1px solid red;
   background-size: 100%;
   background-repeat: no-repeat;
-  border-radius: 12px;
+  border-radius: 25px;
   border: none;
   background-image: url(https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive/image/test/wellness-widget/wellness_bg2.png);
-  display: flex;
-  flex-direction: row;
+  // display: flex;
+  overflow: hidden;
+  // flex-direction: row;
+  position: inherit;
+  z-index: 3000;
 
-  &_text-box {
-    // border: 1px solid red;
+
+  // &_text-box {
+  //   // border: 1px solid red;
+  //   display: flex;
+  //   flex-direction: column;
+
+  //   &_title {
+  //     // border: 1px solid red;
+  //     margin-bottom: 20%;
+  //     padding-left: 15px;
+
+  //     h4 {
+  //       text-align: left;
+  //       cursor: default;
+  //       margin: 0;
+  //       color: white;
+  //       font-size: 45px;
+  //       font-family: Roboto, sans-serif;
+  //       letter-spacing: 0.01px;
+  //       line-height: 60px;
+  //     }
+
+  //     p {
+  //       text-align: left;
+  //       cursor: default;
+  //       margin: 0;
+  //       color: white;
+  //       font-size: 18px;
+  //       font-family: Roboto, sans-serif;
+  //       letter-spacing: 0px;
+  //       line-height: 22px;
+  //       width: 90%;
+  //     }
+  //   }
+
+  //   &_options {
+  //     color: rgb(67, 67, 67);
+  //     font-size: 18px;
+  //     line-height: 2.1;
+  //     letter-spacing: 0.5px;
+  //     font-weight: 700;
+
+  //     div {
+  //       padding-left: 15px;
+  //       cursor: pointer;
+  //       width: 80%;
+  //       &:hover {
+  //         background-color: white;
+  //         border-radius: 30px;
+  //         color: black;
+  //         display: flex;
+  //         flex-direction: row;
+  //         justify-content: space-between;
+  //         padding: 0 10px;
+  //         &::after {
+  //           content: "\003E";
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  #main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 
-    &_title {
-      // border: 1px solid red;
-      margin-bottom: 20%;
-      padding-left: 15px;
-
-      h4 {
-        text-align: left;
-        cursor: default;
-        margin: 0;
-        color: white;
-        font-size: 45px;
-        font-family: Roboto, sans-serif;
-        letter-spacing: 0.01px;
-        line-height: 60px;
-      }
-
-      p {
-        text-align: left;
-        cursor: default;
-        margin: 0;
-        color: white;
-        font-size: 18px;
-        font-family: Roboto, sans-serif;
-        letter-spacing: 0px;
-        line-height: 22px;
-        width: 90%;
-      }
-    }
-
-    &_options {
-      color: rgb(67, 67, 67);
-      font-size: 18px;
-      line-height: 2.1;
-      letter-spacing: 0.5px;
-      font-weight: 700;
-
-      div {
-        padding-left: 15px;
-        cursor: pointer;
-        width: 80%;
-        &:hover {
-          background-color: white;
-          border-radius: 30px;
-          color: black;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          padding: 0 10px;
-          &::after {
-            content: "\003E";
-          }
-        }
-      }
-    }
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
   }
+  .div-img {
+   
+  }
+  
+  #imgtag {
+   
+    width: 100%;
+  }
+  #secondmain {
+
+  }
+  a {
+    // border: 1px solid red;
+    text-decoration: none;
+    color: black;
+    
+  }
+  a:hover {
+   
+  }
+  .shadow h2{
+    padding: 5px 10px;
+    cursor: pointer;
+    &:hover{
+      background-color: #ffffff;
+      border-radius: 20px;
+
+    }
+}
+    
 }
 
 // WELLNESS HUB CSS ENDS
