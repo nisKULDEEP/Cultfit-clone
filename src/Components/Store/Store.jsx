@@ -110,7 +110,7 @@ const Store = () => {
   ) : (
     <div>
       <Navbar path="store" />
-      <div className="store-body" style={{ paddingTop: "60px" }}>
+      <div className="store-body">
         {/* //Second navbar */}
         <div className="storeNav">
           {" "}

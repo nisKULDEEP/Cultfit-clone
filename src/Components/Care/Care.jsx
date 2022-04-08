@@ -43,33 +43,32 @@ const Care = () => {
           <n>Online Consult</n>
           <div>Lab Tests</div>
         </div>
-      </div>
 
-      {/* Start coding from here */}
+        {/* Start coding from here */}
 
-      <ImageSlider slides={SliderData} />
-      <Specialities />
-      <SuperSpecialists />
-      <Experts />
+        <ImageSlider slides={SliderData} />
+        <Specialities />
+        <SuperSpecialists />
+        <Experts />
 
-      {/* quick links start */}
+        {/* quick links start */}
 
-      <div className="quicklinks">
-        <div className="quicklinks__heading">
-          <h1>Quick Links</h1>
+        <div className="quicklinks">
+          <div className="quicklinks__heading">
+            <h1>Quick Links</h1>
+          </div>
+          <div className="quicklinks__link">
+            <a href="#">Help & Support</a>
+            <hr className="quicklinks__hori" />
+            <a href="#">Terms & Conditions</a>
+            <hr className="quicklinks__hori" />
+          </div>
         </div>
-        <div className="quicklinks__link">
-          <a href="#">Help & Support</a>
-          <hr className="quicklinks__hori" />
-          <a href="#">Terms & Conditions</a>
-          <hr className="quicklinks__hori" />
-        </div>
-      </div>
 
-      <FrequntlyAskedQue />
-      <DoctorsInfo />
+        <FrequntlyAskedQue />
+        <DoctorsInfo />
+      </div>
       <Footer />
-
       {/* quick links end */}
     </div>
   );
