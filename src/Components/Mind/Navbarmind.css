@@ -1,14 +1,14 @@
-.mind-nav{
+/* .mind-nav{
     background-color: #393a3b ;
     color: #808181;
     height: 60px;
     display: flex;
     align-items: center;
     font-family: 'Open Sans', sans-serif; ;
-    /* padding: 10px; */
+
     box-sizing: border-box;
     justify-content: center;
-    /* padding-left: 400px; */
+
 }
 
 .mind-link {
@@ -24,11 +24,46 @@
     background-color: black;
     color: #cecece; ;
     font-size: 15px;
-    /* padding: 10px; */
+  
   font-weight: 500;
   height: 45px;
   outline: none;
   border: none;
   margin-top: 32px;
   width: 120px;
+} */
+
+.mind-nav{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #393a3b;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 300;
+  transition: 1s ease-in-out;
+
+
+}
+
+.mind-link-btn{
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    color: white;
+    background-color: #15171c;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.mind-link{
+    color: white;
 }

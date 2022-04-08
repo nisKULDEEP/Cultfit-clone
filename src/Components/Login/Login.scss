@@ -4,8 +4,8 @@
     z-index: 6000;
     // max-height: calc(100% - 64px);
     // overflow-y: scroll;
-    height: 500px;
-    width: 400px;
+    // height: 60vh;
+    width: 80%;
     background-color: black;
     color: white;
     display: flex;
@@ -27,7 +27,7 @@ box-shadow:  -14px -14px 28px #2b2b2b,
         // border: 1px solid red;
         text-align: center;
         img{
-            width: 200px;
+            width: 50%;
         }
     }
 
