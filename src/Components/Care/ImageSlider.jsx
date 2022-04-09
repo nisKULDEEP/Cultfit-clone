@@ -88,7 +88,7 @@ const ImageSlider = () => {
 
   return (
     <div className="store__sliderContainer" style={{}}>
-      <Slider {...settings}>
+      <Slider {...settings} style={{ overflow: "hidden" }}>
         <div>
           <img
             src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/66b45885-d5d9-430d-89ef-0b03a41853d6.png"
