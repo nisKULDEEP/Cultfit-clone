@@ -25,7 +25,7 @@ const Store = () => {
 
   //fetch data from server
   useEffect(() => {
-    fetch("http://localhost:3004/products")
+    fetch("https://cultfit-server.herokuapp.com/products")
       .then((res) => res.json())
       .then((res) => setProductsData(res))
       .catch((err) => console.log("SERVER ERROR"));
@@ -119,19 +119,19 @@ const Store = () => {
 
         {/* slider start */}
         <div className="store__sliderContainer">
-          <Slider {...settings}>
+          <Slider {...settings} style={{ overflow: "hidden" }}>
             <div>
               <img
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:596/dpr_2/image/vm/2ed28f9b-4a4f-4c4d-bd1d-c3c74af005a1.png"
                 alt=""
-                style={{ width: "100%" }}
+                style={{ width: "99vw" }}
               />
             </div>
             <div>
               <img
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:596/dpr_2/image/vm/c596212a-0395-4c49-97b4-7a5fa95bdf7b.png"
                 alt=""
-                style={{ width: "100%" }}
+                style={{ width: "99vw" }}
               />
             </div>
           </Slider>
@@ -220,42 +220,42 @@ const Store = () => {
         {/* shop by workout ends */}
 
         {/* slider start */}
-        <div className="store__sliderContainer">
+        <div className="store__sliderContainer" style={{ overflow: "hidden" }}>
           <h2>Shop by Collection</h2>
-          <Slider {...settings}>
+          <Slider {...settings} style={{ overflow: "hidden" }}>
             <div>
               <img
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_3000:1200/dpr_2/image/vm/50791be6-3fe4-4c3c-89fd-79aefa2813a1.png"
                 alt=""
-                style={{ width: "100vw" }}
+                style={{ width: "99vw" }}
               />
             </div>
             <div>
               <img
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_3000:1200/dpr_2/image/vm/c44cb069-a7fd-46f6-8cdd-18434513bba7.png"
                 alt=""
-                style={{ width: "100vw" }}
+                style={{ width: "99vw" }}
               />
             </div>
             <div>
               <img
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_3000:1200/dpr_2/image/vm/9d0fca00-f5bc-4476-8a93-d9e72eb4d0a4.png"
                 alt=""
-                style={{ width: "100vw" }}
+                style={{ width: "99vw" }}
               />
             </div>
             <div>
               <img
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_3000:1200/dpr_2/image/vm/ba25796f-60c3-4011-8574-ee68a270e4b9.png"
                 alt=""
-                style={{ width: "100vw" }}
+                style={{ width: "99vw" }}
               />
             </div>
             <div>
               <img
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_3000:1200/dpr_2/image/vm/95def045-a089-4723-b647-58f640a37fdf.png"
                 alt=""
-                style={{ width: "100vw" }}
+                style={{ width: "99vw" }}
               />
             </div>
           </Slider>

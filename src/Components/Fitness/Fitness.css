@@ -94,7 +94,7 @@ button{
 }
 .map{
   width: 80%;
-  margin-top: 7%;
+  margin-top: 4%;
   margin-left: 10%;
   margin-bottom: 80px;  
 }
@@ -209,7 +209,9 @@ button{
     font-size: 35px; 
      margin-left: 120px;
 }
-
+.Eliteimg{
+    margin-left: 5%;
+}
 
 .btn-try {
     color: white;
@@ -245,7 +247,7 @@ button{
 }
 .PROimg {
     width: 42%;
-    margin-left: 7%;
+    margin-left: 10%;
     /* margin-bottom: 2%; */
 }
 
@@ -260,7 +262,7 @@ button{
     line-height: 60px;
     box-sizing: border-box;
     width: 500px;
-    margin: auto;
+    margin-left: 10%;
  }
 .cp1{
     color: white;

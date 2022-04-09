@@ -12,10 +12,11 @@ export default class SimpleSlider extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
+      autoplay: true,
     };
     return (
       <div className="mainslide">
-        <Slider {...settings}>
+        <Slider {...settings} style={{ overflow: "hidden" }}>
           <div>
             <img
               className="mindslider"

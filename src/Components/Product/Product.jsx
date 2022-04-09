@@ -35,7 +35,7 @@ const Product = () => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:3004/products?id=${id}`)
+    fetch(`https://cultfit-server.herokuapp.com/products?id=${id}`)
       .then((res) => res.json())
       .then((res) => setProductsData(res[0]))
       .catch((err) => console.log("SERVER ERROR"));
