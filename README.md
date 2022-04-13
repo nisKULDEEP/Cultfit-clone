@@ -9,10 +9,11 @@
 # Technologies
 
 <ol>
-<li> HTML</li>
-<li> CSS</li>
-<li> JAVASCRIPT</li>
 <li> REACT JS</li>
+<li> REDUX </li>
+<li> SASS</li>
+<li> JSON SERVER </li>
+
 </ol>
 
 # Tools
