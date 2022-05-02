@@ -56,7 +56,9 @@ button{
     line-height: 40px;
     width: 20%;
     height: 150px;
+    /* border: 1px solid #cecece; */
     border: 1px solid #cecece;
+    /* background-color: #312f2a; */
     background-color: #312f2a;
     backdrop-filter: blur(50px);
     margin-bottom: 50px;
@@ -118,7 +120,7 @@ button{
     /* height: 250px; */
     margin: auto;
     width: 350px;
-    border: 1px solid #2d3745 ;
+    /* border: 1px solid #2d3745 ; */
     margin-bottom: 100px;
     
     /* border-radius: 15px; */
@@ -158,6 +160,13 @@ button{
     margin-bottom: 25px;
     text-align: center;
 }
+
+@media (max-width: 1024px) {
+    #table {
+      display: none;
+    }
+  }
+
 .tablebutton{
     color: coral;
     font-size: 15px;
