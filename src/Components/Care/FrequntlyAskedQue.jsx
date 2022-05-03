@@ -43,9 +43,6 @@ const FrequntlyAskedQue = () => {
         rowContentPaddingBottom : "30px",
         rowContentPaddingRight : "100px",
         rowContentColor : "grey",
-
-
-
     };
     
     const config = {

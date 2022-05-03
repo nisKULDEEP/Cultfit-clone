@@ -8,14 +8,37 @@ const SuperSpecialists = () => {
         <h1 className='superspecialists__head'>Super Specialists</h1>
         <p className='superspecialists__para'>Video/Audio call super-specialists for your family</p>
       </div>
-      <div className='superspecialists__images'>
-            <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/GastroEnterologist.png" alt="" className='superspecialists__IndImage' />
-            <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/ENDO.jpg" alt="" className='superspecialists__IndImage' />
-            <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/Neurology.jpg" alt="" className='superspecialists__IndImage' />
-            <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/Rheumatology.png" alt="" className='superspecialists__IndImage' />
-            <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/Cardiology.jpg" alt="" className='superspecialists__IndImage' />
-            <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/Oncologist.png" alt="" className='superspecialists__IndImage' />
-            <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/Nephrology.jpg" alt="" className='superspecialists__IndImage' />
+      <div className="superspecialists__images">
+            <div className="superspecialists__IndDiv">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/FitCheck_Magazine-02.png"
+                alt=""
+                className="superspecialists__IndImage"
+              />
+              <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="superspecialists__IndDiv">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/mp/diag_pack_Vitamin_Profile_clp.jpg"
+                alt=""
+                className="superspecialists__IndImage"
+              />
+              <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
       </div>
     </div>
   )
