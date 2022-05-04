@@ -13,6 +13,7 @@ import {
   Checkout,
   Error,
 } from "./Components";
+import Admin from "./Components/Admin/CreateProduct";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -33,6 +34,7 @@ function App() {
         <Route path="/products/:id" element={<Product />} />
         <Route path="/*" element={<Error />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/admin" element={<Admin />} />
         <Route path="*" element={<Error />} />
       </Routes>
       {/* <Footer /> */}

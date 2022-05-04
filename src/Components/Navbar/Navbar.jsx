@@ -133,6 +133,32 @@ const Navbar = (path) => {
                 store
               </Link>{" "}
             </li>
+            <li
+              style={
+                path === "store"
+                  ? {
+                      borderBottomColor: "white",
+                      borderBottomWidth: "2px",
+                      borderBottomStyle: "solid",
+                    }
+                  : { borderWidth: "none" }
+              }
+            >
+              {" "}
+              <Link
+                to="/store"
+                className="navbar__links-link"
+                style={
+                  path === "store"
+                    ? {
+                        color: "white",
+                      }
+                    : { color: "rgb(240, 240, 240, 0.6)" }
+                }
+              >
+                store
+              </Link>{" "}
+            </li>
           </ul>
         </div>
         <div className="navbar__cart">
