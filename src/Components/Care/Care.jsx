@@ -10,6 +10,7 @@ import Experts from "./Experts";
 import FrequntlyAskedQue from "./FrequntlyAskedQue";
 import DoctorsInfo from "./DoctorsInfo";
 import { Footer } from "../index";
+import Timer from "./Timer";
 
 const Care = () => {
   const [loading__Status, setLoading__Status] = useState(true);
@@ -44,6 +45,7 @@ const Care = () => {
 
         {/* Start coding from here */}
         <ImageSlider slides={SliderData} />
+        <Timer />
         <div className="careBody">
           <Specialities />
           <SuperSpecialists />

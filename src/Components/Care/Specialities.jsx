@@ -5,94 +5,373 @@ const Specialities = () => {
   return (
     <div className="specialities">
       <div className="specialities__heading">
-        <h1 className="specialities__head">Specialists</h1>
+        <h1 className="specialities__head">Lab Tests</h1>
         <p className="specialities__para">
           Consult with top doctors through Video/Audio
         </p>
       </div>
-      <div className="specialities-img-container">
-        <div className="specialities__images">
+      <div className="specialities__images">
+            <div className="specialities__IndDiv">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/FitCheck_Magazine-02.png"
+                alt=""
+                className="specialities__IndImage"
+              />
+              <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/mp/diag_pack_Vitamin_Profile_clp.jpg"
+                alt=""
+                className="specialities__IndImage"
+              />
+              <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/mp/diag_pack_Thyroid_Screening_clp.jpg"
+                alt=""
+                className="specialities__IndImage"
+              />
+              <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/diagnostics/screening-packs/WorkoutWellness_men_magazine_web2.png"
+                alt=""
+                className="specialities__IndImage"
+              />
+              <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">  
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/diagnostics/screening-packs/WorkoutWellness_women_magazine_web2.png"
+                alt=""
+                className="specialities__IndImage"
+              />
+              <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/diagnostics/screening-packs/sr_citizen_adv_m_mag.png"
+                alt=""
+                className="specialities__IndImage"
+              />
+              <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/diagnostics/screening-packs/sr_citizen_adv_f_mag.png"
+                alt=""
+                className="specialities__IndImage"
+              />
+              <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/IronScreeningClp122020.png"
+                alt=""
+                className="specialities__IndImage"
+              />
+              <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/WomensHealthScreening_Magazine.png"
+                alt=""
+                className="specialities__IndImage"
+              />
+              <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/diagnostics/screening-packs/PCODMagazineWeb.png"
+                alt=""
+                className="specialities__IndImage"
+              />
+              <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/mp/HaemogramWithCBCClp.jpg"
+                alt=""
+                className="specialities__IndImage"
+              />
+              <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/mp/diag_pack_Diabetes_Screening_clp.jpg"
+                alt=""
+                className="specialities__IndImage"
+              />
+              <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
             <img
-              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/covid_unlimited_1.png"
+              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/LipidScreening_Magazine.png"
               alt=""
               className="specialities__IndImage"
             />
+            <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/ImmunityCcreening_Magazine.png"
+                alt=""
+                className="specialities__IndImage"
+              />
+              <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/CF01032_hero_2.png"
+                alt=""
+                className="specialities__IndImage"
+              />
+              <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>  
+
+            <div className="specialities__IndDiv">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/PregnancyScreening_Magazine.png"
+                alt=""
+                className="specialities__IndImage"
+              />
+              <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
             <img
-              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/covid_adults_3.png"
+              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/mp/diag_pack_Kidney_Screening_clp.jpg"
               alt=""
               className="specialities__IndImage"
             />
+            <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
+              <img
+                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/HairFallScreeningClp122019.png"
+                alt=""
+                className="specialities__IndImage"
+              />
+              <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
             <img
-              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/covid_kids_3.png"
+              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/BoneHealthScreening_Magazine.png"
               alt=""
               className="specialities__IndImage"
             />
+            <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
             <img
-              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/Pulmonologist.png"
+              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/mp/diag_pack_Liver_Screening_clp.jpg"
               alt=""
               className="specialities__IndImage"
             />
+            <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
             <img
-              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/internal_medicine_medium2.png"
+              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/FeverPanel_Magazine.jpg"
               alt=""
               className="specialities__IndImage"
             />
+            <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
             <img
-              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/Dermatology_Magazine.png"
+              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/Alcohol_magazine.png"
               alt=""
               className="specialities__IndImage"
             />
+            <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
             <img
-              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/GynecologistV2.jpg"
+              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/diagnostics/screening-packs/Anemia_Magazine_Web_new.png"
               alt=""
               className="specialities__IndImage"
             />
+            <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
+            <div className="specialities__IndDiv">
             <img
-              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/ENT.jpg"
+              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/carefit/bundle/Obesity_Risk_Magazine.jpg"
               alt=""
               className="specialities__IndImage"
             />
-            <img
-              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/ORTHO.jpg"
-              alt=""
-              className="specialities__IndImage"
-            />
-            <img
-              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/PaediatricV2.jpg"
-              alt=""
-              className="specialities__IndImage"
-            />
-            <img
-              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/Trichology_Magazine.png"
-              alt=""
-              className="specialities__IndImage"
-            />
-            <img
-              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/Ophthalmology.jpg"
-              alt=""
-              className="specialities__IndImage"
-            />
-            <img
-              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/Urology2.jpg"
-              alt=""
-              className="specialities__IndImage"
-            />
-            <img
-              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/Sexology.jpg"
-              alt=""
-              className="specialities__IndImage"
-            />
-            <img
-              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/Physiotherapy_magazine_with_text.png"
-              alt=""
-              className="specialities__IndImage"
-            />
-            <img
-              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_232,ar_0.8,fl_progressive,f_auto,q_auto:eco/dpr_2/image/singles/care/tc/DentalCare.jpg"
-              alt=""
-              className="specialities__IndImage"
-            />
-        </div>
+            <div>
+                <p>Price</p>
+                <h4>Rs. 1990</h4>
+              </div>
+              <div>
+                <p>Offer Price</p>
+                <h4>Rs. 990</h4>
+              </div>
+            </div>
       </div>
     </div>
   );
