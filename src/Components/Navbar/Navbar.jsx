@@ -1,14 +1,41 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Navbar.scss";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import Login from "../Login/Login";
 import Cart from "../Cart/Cart";
+import { useSelector, useDispatch } from "react-redux";
+import { login } from "../../Redux/loginDetails/action";
 
 const Navbar = (path) => {
   path = path.path;
 
   const [showLogin, setShowLogin] = useState(false);
   const [showCart, setShowCart] = useState(false);
+  const loginStatus = useSelector((store) => store.loginReducer.loginStatus);
+  const loginRedux = useSelector((store) => store.loginReducer.loginDetails);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (JSON.parse(localStorage.getItem("token")) != null) {
+      const token = JSON.parse(localStorage.getItem("token"));
+      fetch("https://cultfit-backend.herokuapp.com/users/signin", {
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": true,
+          token: `Bearer ${token}`,
+        },
+        method: "POST",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          dispatch(login(data.userDetail));
+          setShowLogin(false);
+        })
+        .catch();
+    }
+  }, []);
 
   return (
     <>
@@ -158,10 +185,18 @@ const Navbar = (path) => {
           </div>
           <div
             className="navbar__cart-profile"
-            onClick={() => setShowLogin(!showLogin)}
+            onClick={() => {
+              loginStatus === false
+                ? setShowLogin(!showLogin)
+                : navigate("/profile");
+            }}
           >
             <img
-              src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_26,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/header/Profile.png"
+              src={
+                loginStatus
+                  ? loginRedux.photo
+                  : "https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_26,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive/image/test/header/Profile.png"
+              }
               alt="profile"
             />
           </div>
