@@ -1,0 +1,19 @@
+.Profile-description{
+    display: flex;
+}
+.profileLeftbar{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.Col-1{
+    margin-top: 5%;
+}
+.Col-2{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+/* .input-feild-container{
+    margin-top: 10%;
+} */
+/* .left-bar-col{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+} */

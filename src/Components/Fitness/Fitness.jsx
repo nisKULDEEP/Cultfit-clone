@@ -225,7 +225,6 @@ const Fitness = () => {
                 <div className="EliteContent">
                   <div className="marginleft">
                     <img
-                     
                       className="cp1"
                       src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_200,ar_6.55,q_auto:eco,dpr_1.25,f_auto,fl_progressive//image/test/brand-logo/cult-pass-elite.png"
                       alt="img"
@@ -251,7 +250,7 @@ const Fitness = () => {
                 </div>
               </div>
 
-              <div className="PRO">
+              <div style={{width:"80%",margin:"auto"}} className="PRO">
                 <div className="PROimg">
                   <img
                     style={{width:"100%"}}

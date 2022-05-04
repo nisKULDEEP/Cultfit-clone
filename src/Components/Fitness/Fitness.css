@@ -17,7 +17,7 @@
     border: 1px solid black;
     /* height: 100; */
     /* width: 100%; */
-    background-image: url('https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_1550,ar_1.47,q_auto:eco,dpr_1.05,f_auto,fl_progressive/image/vm/d73a1dee-74a3-42f9-b3c0-b33b89f3bcef.jpg');  
+    background-image: url('https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_1600,ar_1.67,q_auto:eco,dpr_1.25,f_auto,fl_progressive/image/vm/56e2fd71-20d4-4a61-9577-af522f148df8.png');  
     background-size: contain;
     background-repeat: no-repeat;
 
@@ -56,9 +56,7 @@ button{
     line-height: 40px;
     width: 20%;
     height: 150px;
-    /* border: 1px solid #cecece; */
     border: 1px solid #cecece;
-    /* background-color: #312f2a; */
     background-color: #312f2a;
     backdrop-filter: blur(50px);
     margin-bottom: 50px;
@@ -182,6 +180,14 @@ button{
     column-gap: 40px;
     margin-top: 100px;
 }
+@media (max-width: 1024px) {
+    .Elite{
+      width: 80%;
+      height: auto;
+    }
+  }
+
+
 .EliteContent{
     width: 45%;
 }
@@ -251,6 +257,14 @@ button{
     column-gap: 40px;
     margin-top: 100px;
 }
+
+@media (max-width: 1024px) {
+    .PRO{
+      width: 80%;
+      height: auto;
+    }
+  }
+
 .PROContent{
     width: 45%;
 }

@@ -6,6 +6,9 @@
     box-sizing: border-box;
     justify-content: center;
     padding-left: 400px;
+    border: 1px solid #393a3b;
+    /* border-style: hidden; */
+    
 }
 
 .nav-link {
@@ -14,4 +17,6 @@
     padding: 0px 30px;
     font-size: 18px;
     font-weight: 600;
+    cursor: pointer;
+    font-family: 'Inter-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif';
 }
