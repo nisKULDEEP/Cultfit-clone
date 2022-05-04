@@ -11,8 +11,8 @@
   box-sizing: border-box;
   position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
+  // left: 0;
+  // right: 0;
   z-index: 300;
   transition: 1s ease-in-out;
   p {
@@ -34,7 +34,7 @@
   &__sliderContainer {
     margin-bottom: 30px;
     h2{
-        width: 80%;
+        width: 100%;
         margin: auto;
         font-family: 'Open Sans', sans-serif;
         font-size: 1.5rem;
@@ -311,4 +311,6 @@
 
 }
 
-
+.store__sliderContainer{
+  width: 100vw;
+}
