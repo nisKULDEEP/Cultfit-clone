@@ -15,6 +15,7 @@ import {
 } from "./Components";
 
 import { Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 // import Cart from "./Components/Cart/Cart";
 
 function App() {

@@ -14,14 +14,14 @@ const Slide = () => {
           href="/fr/"
           onMouseEnter={() =>
             setImage(
-              `https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_404,ar_1.31,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/introducting-cult-pass/icp_cg.png`
+              `https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/podcasters.png`
             )
           }
           // onMouseLeave={() => setImage("")}
         >
-          <span>
-            <div className="shadow">
-              <h2>WORKOUT GEAR</h2>
+          <span className="shadow">
+            <div>
+              <h2>Podcasters</h2>
             </div>
           </span>
         </a>
@@ -29,14 +29,14 @@ const Slide = () => {
           href="/en/"
           onMouseEnter={() =>
             setImage(
-              `https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_276,ar_1.6,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/wellness-widget/therapy_desk/therapy1.png`
+              `https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/videocreators.png`
             )
           }
           // onMouseLeave={() => setImage("")}
         >
           <span className="shadow">
             <div>
-              <h2>CONSULT ONLINE</h2>
+              <h2>Video Creators</h2>
             </div>
           </span>
         </a>
@@ -44,14 +44,14 @@ const Slide = () => {
           href="/fr/"
           onMouseEnter={() =>
             setImage(
-              `https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_276,ar_1.6,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/wellness-widget/therapy_desk/therapy1.png`
+              `https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/musicians.png`
             )
           }
           // onMouseLeave={() => setImage("")}
         >
           <span className="shadow">
             <div>
-              <h2>LABS</h2>
+              <h2>Musicians</h2>
             </div>
           </span>
         </a>
@@ -59,14 +59,14 @@ const Slide = () => {
           href="/fr/"
           onMouseEnter={() =>
             setImage(
-              `https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_276,ar_1.6,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/wellness-widget/therapy_desk/therapy3.png`
+              `https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/visualartists.png`
             )
           }
           // onMouseLeave={() => setImage("")}
         >
           <span className="shadow">
             <div>
-              <h2>THERAPY</h2>
+              <h2>Visual Artists</h2>
             </div>
           </span>
         </a>
@@ -74,11 +74,62 @@ const Slide = () => {
           href="/fr/"
           onMouseEnter={() =>
             setImage(
-              `https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_276,ar_1.6,q_auto:eco,dpr_1.0700000524520874,f_auto,fl_progressive//image/test/wellness-widget/therapy_desk/therapy4.png`
+              `https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/communities.png`
             )
           }
           // onMouseLeave={() => setImage("")}
-        ></a>
+        >
+          <span className="shadow">
+            <div>
+              <h2>Communities</h2>
+            </div>
+          </span>
+        </a>
+        <a
+          href="/fr/"
+          onMouseEnter={() =>
+            setImage(
+              `https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/writers.png`
+            )
+          }
+          // onMouseLeave={() => setImage("")}
+        >
+          <span className="shadow">
+            <div>
+              <h2>Writers & Journalists</h2>
+            </div>
+          </span>
+        </a>
+        <a
+          href="/fr/"
+          onMouseEnter={() =>
+            setImage(
+              `https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/gamingcreators.png`
+            )
+          }
+          // onMouseLeave={() => setImage("")}
+        >
+          <span className="shadow">
+            <div>
+              <h2>Gaming Creators</h2>
+            </div>
+          </span>
+        </a>
+        <a
+          href="/fr/"
+          onMouseEnter={() =>
+            setImage(
+              `https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/nonprofit.png`
+            )
+          }
+          // onMouseLeave={() => setImage("")}
+        >
+          <span className="shadow">
+            <div>
+              <h2>Nonprofits</h2>
+            </div>
+          </span>
+        </a>
       </div>
     </div>
   );
