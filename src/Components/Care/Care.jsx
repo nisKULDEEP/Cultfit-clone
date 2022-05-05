@@ -49,7 +49,7 @@ const Care = () => {
         <div className="careBody">
           <Specialities />
           <SuperSpecialists />
-          <Experts />
+          {/* <Experts /> */}
 
           {/* quick links start */}
 

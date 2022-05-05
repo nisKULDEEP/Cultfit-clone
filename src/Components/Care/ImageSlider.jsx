@@ -93,6 +93,10 @@ const ImageSlider = () => {
         <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_1360:150/dpr_2/image/vm/e90cacd5-32e0-403b-881b-be56cd0d91e8.png" alt="" className="up-header-img" />
         <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/5d19f72d-f1d8-478f-ae31-9b25883b1782.png" alt="" className="header-img" />
        </div>
+       {/* <div>
+        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/452c3cdf-2932-4a66-b579-4c31dda35839.png" alt="" className="up-header-img" />
+        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/5d19f72d-f1d8-478f-ae31-9b25883b1782.png" alt="" className="header-img" />
+       </div> */}
         {/*
         <div>
           <img
