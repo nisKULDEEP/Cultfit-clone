@@ -55,7 +55,7 @@ const Admin = () => {
           Material : 
             <div>
               <label> Choose Colour: </label>
-              <input type="color" name='colour' placeholder='Colour'  onChange={handleChange} />
+              <input type="color" name='colour' placeholder='Colour' className='color'  onChange={handleChange} />
             </div>
             <br />
 
