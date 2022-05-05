@@ -45,9 +45,12 @@ const Login = () => {
       .then((res) => res.json())
       .then((data) => {
         localStorage.setItem("token", JSON.stringify(data.token));
-        // setLoginStatus(true)
         dispatch(login(data.userDetail));
         setShowLogin(false);
+      })
+      .catch((error) => {
+        console.log(error);
+        alert("Something went wrong");
       });
   };
   let handleSignup = () => {
