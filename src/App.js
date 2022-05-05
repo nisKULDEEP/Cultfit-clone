@@ -13,6 +13,7 @@ import {
   Checkout,
   Error,
 } from "./Components";
+import Admin from "./Components/Admin/CreateProduct";
 
 import { Routes, Route } from "react-router-dom";
 import ProfilePage from "./Components/UserProfile/Profile";
@@ -58,6 +59,7 @@ function App() {
         <Route path="/products/:id" element={<Product />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/admin" element={<Admin />} />
         <Route path="*" element={<Error />} />
       </Routes>
       {/* <Footer /> */}
@@ -66,3 +68,4 @@ function App() {
 }
 
 export default App;
+
