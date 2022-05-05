@@ -716,6 +716,8 @@
     cursor: pointer;
     height: 100%;
     width: 100%;
+    position: relative;
+    z-index: 500;
   }
   .div-img {
    
@@ -740,8 +742,10 @@
   .shadow h2{
     padding: 5px 10px;
     cursor: pointer;
+    color: rgb(73, 70, 70);
     &:hover{
       background-color: #ffffff;
+      color: black;
       border-radius: 20px;
 
     }

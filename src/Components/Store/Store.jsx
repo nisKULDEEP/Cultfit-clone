@@ -25,9 +25,9 @@ const Store = () => {
 
   //fetch data from server
   useEffect(() => {
-    fetch("https://cultfit-server.herokuapp.com/products")
+    fetch("https://cultfit-backend.herokuapp.com/products/")
       .then((res) => res.json())
-      .then((res) => setProductsData(res))
+      .then((res) => setProductsData(res.data))
       .catch((err) => console.log("SERVER ERROR"));
 
     return () => {};
@@ -40,7 +40,7 @@ const Store = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    // autoplaySpeed: 500,
+    autoplaySpeed: 5000,
   };
 
   const data = {
@@ -124,14 +124,14 @@ const Store = () => {
               <img
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:596/dpr_2/image/vm/2ed28f9b-4a4f-4c4d-bd1d-c3c74af005a1.png"
                 alt=""
-                style={{ width: "99vw" }}
+                style={{ width: "100vw" }}
               />
             </div>
             <div>
               <img
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:596/dpr_2/image/vm/c596212a-0395-4c49-97b4-7a5fa95bdf7b.png"
                 alt=""
-                style={{ width: "99vw" }}
+                style={{ width: "100vw" }}
               />
             </div>
           </Slider>
@@ -295,7 +295,7 @@ const Store = () => {
             <div className="store__bestsellers_container-product-box">
               {productsData.map(
                 ({
-                  id,
+                  _id,
                   title,
                   price,
                   oldprice,
@@ -305,8 +305,8 @@ const Store = () => {
                   fabric,
                   material,
                 }) => (
-                  <div className="store__productCard" key={id}>
-                    <Link to={`/products/${id}`} id="store__productCard-link">
+                  <div className="store__productCard" key={_id}>
+                    <Link to={`/products/${_id}`} id="store__productCard-link">
                       <img src={imageUrl[0]} alt="" />
                       <h3>{title}</h3>
                       <div className="store__productCard-priceBox">
