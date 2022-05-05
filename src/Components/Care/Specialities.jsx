@@ -7,7 +7,7 @@ const Specialities = () => {
       <div className="specialities__heading">
         <h1 className="specialities__head">Lab Tests</h1>
         <p className="specialities__para">
-          Consult with top doctors through Video/Audio
+        Assess and monitor your health from the comfort of your home now.
         </p>
       </div>
       <div className="specialities__images">

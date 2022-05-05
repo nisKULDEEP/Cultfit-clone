@@ -1,4 +1,4 @@
-body{
+.main-div{
     /* background-image: linear-gradient(to right, rgb(233, 164, 223) , rgb(208, 123, 195) , rgb(200, 200, 55) , rgb(101, 101, 15)); */
     background-image: linear-gradient(to right , rgb(102, 84, 99) , rgb(40, 49, 79) , rgb(98, 98, 61) , rgb(129, 78, 36));
 }

@@ -5,8 +5,8 @@ const SuperSpecialists = () => {
   return (
     <div className='superspecialists'>
       <div className='superspecialists__heading'>
-        <h1 className='superspecialists__head'>Super Specialists</h1>
-        <p className='superspecialists__para'>Video/Audio call super-specialists for your family</p>
+        <h1 className='superspecialists__head'>Tests for Senior Citizen</h1>
+        {/* <p className='superspecialists__para'>Video/Audio call super-specialists for your family</p> */}
       </div>
       <div className="superspecialists__images">
             <div className="superspecialists__IndDiv">

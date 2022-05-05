@@ -26,7 +26,8 @@ const Admin = () => {
   }
 
   return (
-    <form className='main-form'>
+    <div className='main-div'>
+      <form className='main-form'>
         <div className='first-div'>
         <div>
           <input type='text' name='title' placeholder='Enter Title' onChange={handleChange} />
@@ -92,6 +93,7 @@ const Admin = () => {
       </div>
 
     </form>
+    </div>
   )
 }
 

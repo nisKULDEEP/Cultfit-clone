@@ -153,6 +153,52 @@
 }
 
 
+@media screen and (max-width: "1024px") {
+    .clock{
+        // position: relative;
+        // margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        background-color: rgb(175, 172, 172);
+        margin-top: -4%;
+    }
+    
+ 
+  }
+
+@media screen and (max-width: "769px") {
+    .clock{
+        // position: relative;
+        // margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        background-color: rgb(175, 172, 172);
+        margin-top: -6%;
+    }
+    
+}
+
+@media screen and (max-width: "500px") {
+    .clock{
+        // position: relative;
+        // margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        background-color: rgb(175, 172, 172);
+        margin-top: -9%;
+    }
+    
+}
+
 
 
 
