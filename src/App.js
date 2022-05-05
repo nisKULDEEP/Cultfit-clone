@@ -16,6 +16,7 @@ import {
 import Admin from "./Components/Admin/CreateProduct";
 
 import { Routes, Route } from "react-router-dom";
+import ProfilePage from "./Components/UserProfile/Profile";
 
 // import Error from "./Components/Error/Error";
 // import Cart from "./Components/Cart/Cart";
@@ -32,7 +33,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/products/:id" element={<Product />} />
-        <Route path="/*" element={<Error />} />
+        <Route path="/profile" element={<ProfilePage />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="*" element={<Error />} />

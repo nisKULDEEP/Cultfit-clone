@@ -17,7 +17,9 @@ const Navbar = (path) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (JSON.parse(localStorage.getItem("token")) != null) {
+    localStorage.getItem("token") === "undefined" &&
+      localStorage.removeItem("token");
+    if (JSON.parse(localStorage.getItem("token")) !== null) {
       const token = JSON.parse(localStorage.getItem("token"));
       fetch("https://cultfit-backend.herokuapp.com/users/signin", {
         headers: {
@@ -33,7 +35,7 @@ const Navbar = (path) => {
           dispatch(login(data.userDetail));
           setShowLogin(false);
         })
-        .catch();
+        .catch((err) => console.log(err));
     }
   }, []);
 
