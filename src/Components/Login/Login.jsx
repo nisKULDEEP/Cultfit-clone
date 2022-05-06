@@ -32,7 +32,7 @@ const Login = () => {
   };
 
   let handleLogin = () => {
-    fetch("https://cultfit-backend.herokuapp.com/users/signin", {
+    fetch("https://cultfit-server.herokuapp.com/users/signin", {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -63,7 +63,7 @@ const Login = () => {
   };
 
   let handleSignupApi = async () => {
-    fetch("https://cultfit-backend.herokuapp.com/users/signup", {
+    fetch("https://cultfit-server.herokuapp.com/users/signup", {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",

@@ -25,7 +25,7 @@ const Admin = () => {
     material: "",
     "Heavy equipment training": false,
     "All workouts": false,
-    size: "",
+    details: "",
   });
 
   const handleChange = (e) => {
@@ -41,7 +41,7 @@ const Admin = () => {
 
   const handleAdd = (e) => {
     e.preventDefault();
-    fetch(`https://cultfit-backend.herokuapp.com/products/upload`, {
+    fetch(`https://cultfit-server.herokuapp.com/products/upload`, {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -53,7 +53,7 @@ const Admin = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log("done");
+        console.log(data);
       })
       .catch((err) => console.log(err));
   };
@@ -118,7 +118,6 @@ const Admin = () => {
           </div>
         </div>
         <br />
-
         <div className="material">
           <div>
             <label> Choose Colour: </label>
@@ -166,14 +165,13 @@ const Admin = () => {
           </div>
         </div>
         <br />
-
+        Extra Details
         <div>
           <label>
-            Size Dimension:
-            <input
+            <textarea
               type="text"
               placeholder="enter size"
-              name="size"
+              name="details"
               onChange={handleChange}
             />
           </label>

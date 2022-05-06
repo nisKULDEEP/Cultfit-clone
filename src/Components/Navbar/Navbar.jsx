@@ -21,7 +21,7 @@ const Navbar = (path) => {
       localStorage.removeItem("token");
     if (JSON.parse(localStorage.getItem("token")) !== null) {
       const token = JSON.parse(localStorage.getItem("token"));
-      fetch("https://cultfit-backend.herokuapp.com/users/signin", {
+      fetch("https://cultfit-server.herokuapp.com/users/signin", {
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",

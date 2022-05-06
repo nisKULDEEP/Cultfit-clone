@@ -62,7 +62,7 @@ export const ProfilePage = () => {
     delete newPayload.name;
     delete newPayload.work_email;
     delete newPayload.date_of_birth;
-    fetch(`https://cultfit-backend.herokuapp.com/users/${loginRedux._id}`, {
+    fetch(`https://cultfit-server.herokuapp.com/users/${loginRedux._id}`, {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
