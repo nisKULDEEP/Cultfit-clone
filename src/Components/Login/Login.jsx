@@ -59,7 +59,7 @@ const Login = () => {
   };
 
   let googleAuth = () => {
-    window.open("https://cultfit-backend.herokuapp.com/google", "_self");
+    window.open("http://localhost:9999/google", "_self");
   };
 
   let handleSignupApi = async () => {
@@ -114,7 +114,7 @@ const Login = () => {
             <button onClick={handleLogin}>CONTINUE</button>
           </div>
           <div className="login__button">
-            <button onClick={handleSignup}>SignUp</button>
+            <button onClick={handleSignup}>SIGNUP</button>
           </div>
           <div className="login__social" onClick={googleAuth}>
             <div className="login__social-txt">OR CONNECT WITH</div>

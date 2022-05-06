@@ -5,6 +5,7 @@ import { FaHeartbeat } from "react-icons/fa";
 import { MdOutlineSubscriptions } from "react-icons/md";
 import { MdRedeem } from "react-icons/md";
 import { FiLogOut } from "react-icons/fi";
+import { GrUserAdmin } from "react-icons/gr";
 import { MdOutlineSupportAgent } from "react-icons/md";
 import { FiSettings } from "react-icons/fi";
 import { useSelector, useDispatch } from "react-redux";
@@ -51,7 +52,6 @@ export const ProfilePage = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(formData);
     const [first_name, last_name] = formData.name.split(" ");
     const newPayload = {
       ...formData,
@@ -84,7 +84,15 @@ export const ProfilePage = () => {
   }
 
   const handleLogout = () => {
-    // setLogoutStatus(JSON.parse(localStorage.getItem("token")));
+    fetch("http://localhost:9999/logout", {
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": true,
+      },
+      method: "GET",
+    }).catch(console.log("Google SignOut Error"));
+
     fetch("https://cultfit-backend.herokuapp.com/users/signout", {
       headers: {
         Accept: "application/json",
@@ -281,6 +289,30 @@ export const ProfilePage = () => {
                 <FiLogOut />
               </div>
             </div>
+
+            {loginRedux.role === "ADMIN" && (
+              <div
+                className="left-bar-col-8"
+                style={{ marginLeft: "5%", marginTop: "7.5%", display: "flex" }}
+                onClick={() => {
+                  navigate("/admin");
+                }}
+              >
+                <div style={{ width: "350px", cursor: "pointer" }}>
+                  ADMIN PANEL
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row-reverse",
+                    paddingRight: "7.5%",
+                    cursor: "pointer",
+                  }}
+                >
+                  <GrUserAdmin />
+                </div>
+              </div>
+            )}
           </div>
         </div>
         {/* right */}
