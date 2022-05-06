@@ -18,34 +18,42 @@ import Admin from "./Components/Admin/CreateProduct";
 import { Routes, Route } from "react-router-dom";
 import ProfilePage from "./Components/UserProfile/Profile";
 import { useEffect, useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { login } from "./Redux/loginDetails/action";
 
 // import Error from "./Components/Error/Error";
 // import Cart from "./Components/Cart/Cart";
 
 function App() {
+  const loginRedux = useSelector((store) => store.loginReducer);
+  const dispatch = useDispatch();
+
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:3030/auth/login/success`, {
+    fetch("http://127.0.0.1:9999/login/success", {
       method: "GET",
       credentials: "include",
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": true,
+        "Access-Control-Allow-Credentials": true,
       },
     })
-      .then(
-        (res) => res.json()
-        // throw new Error("Authentification failed");
-      )
-      .then((res) => {
-        console.log(res);
-        setUser(res.user);
+      .then((response) => response.json())
+      .then((response) => {
+        response.status === 200 && dispatch(login(response.user));
+        response.status === 200 &&
+          localStorage.setItem("token", JSON.stringify(response.token));
+        // console.log("RESPONSE :", response);
+        setUser(response.user);
+        // console.log("User : ", response.user);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.log("err" + err);
+      });
   }, []);
-  console.log(user);
+
   return (
     <div>
       <Routes>
@@ -68,4 +76,3 @@ function App() {
 }
 
 export default App;
-

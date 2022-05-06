@@ -59,7 +59,7 @@ const Login = () => {
   };
 
   let googleAuth = () => {
-    window.open("http://localhost:3030/auth/google", "_self");
+    window.open("http://localhost:9999/google", "_self");
   };
 
   let handleSignupApi = async () => {

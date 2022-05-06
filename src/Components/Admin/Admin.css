@@ -1,13 +1,16 @@
 .main-div{
     /* background-image: linear-gradient(to right, rgb(233, 164, 223) , rgb(208, 123, 195) , rgb(200, 200, 55) , rgb(101, 101, 15)); */
     background-image: linear-gradient(to right , rgb(102, 84, 99) , rgb(40, 49, 79) , rgb(98, 98, 61) , rgb(129, 78, 36));
+    position: relative;
+    top: 40px;
+    padding: 20px;
 }
 .main-form{
-    /* border: 1px solid black; */
+    margin: 50px;
+    border: 1px solid black;
     margin: 20px;
     /* display: flex; */
     text-align: center;
-    background-color: rgb(249, 248, 246);
     background-color: white;
     width: 50%;
     margin-left: auto;
@@ -28,6 +31,7 @@
 input{
     width: 200px;
     height: 30px;
+    padding: 0 10px;
     border: none;
     border-bottom: 2px solid black;
 }
