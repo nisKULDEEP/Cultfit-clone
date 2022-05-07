@@ -42,12 +42,13 @@ function App() {
     })
       .then((response) => response.json())
       .then((response) => {
+        console.log("RESPONSE :", response);
+        console.log("User : ", response.user);
         response.status === 200 && dispatch(login(response.user));
         response.status === 200 &&
           localStorage.setItem("token", JSON.stringify(response.token));
-        // console.log("RESPONSE :", response);
+
         setUser(response.user);
-        // console.log("User : ", response.user);
       })
       .catch((err) => {
         console.log("err" + err);

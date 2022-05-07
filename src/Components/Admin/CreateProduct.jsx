@@ -20,7 +20,7 @@ const Admin = () => {
     price: "",
     oldPrice: "",
     imageUrl: "",
-    description: "",
+    desc: "",
     Colour: "",
     material: "",
     "Heavy equipment training": false,
@@ -52,9 +52,6 @@ const Admin = () => {
       body: JSON.stringify(data),
     })
       .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-      })
       .catch((err) => console.log(err));
   };
 
@@ -111,7 +108,7 @@ const Admin = () => {
           <div>
             <input
               type="text"
-              name="description"
+              name="desc"
               placeholder="Enter Description"
               onChange={handleChange}
             />
@@ -170,7 +167,7 @@ const Admin = () => {
           <label>
             <textarea
               type="text"
-              placeholder="enter size"
+              placeholder="enter details"
               name="details"
               onChange={handleChange}
             />
