@@ -41,7 +41,7 @@ const Admin = () => {
 
   const handleAdd = (e) => {
     e.preventDefault();
-    fetch(`https://cultfit-server.herokuapp.com/products/upload`, {
+    fetch(`http://localhost:9999/products/upload`, {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",

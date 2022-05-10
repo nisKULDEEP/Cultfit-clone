@@ -62,7 +62,7 @@ export const ProfilePage = () => {
     delete newPayload.name;
     delete newPayload.work_email;
     delete newPayload.date_of_birth;
-    fetch(`https://cultfit-server.herokuapp.com/users/${loginRedux._id}`, {
+    fetch(`http://localhost:9999/users/${loginRedux._id}`, {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
@@ -93,7 +93,7 @@ export const ProfilePage = () => {
       method: "GET",
     }).catch(console.log("Google SignOut Error"));
 
-    fetch("https://cultfit-backend.herokuapp.com/users/signout", {
+    fetch("http://localhost:9999/users/signout", {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
