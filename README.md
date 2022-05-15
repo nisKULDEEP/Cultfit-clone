@@ -12,7 +12,9 @@
 <li> REACT JS</li>
 <li> REDUX </li>
 <li> SASS</li>
-<li> JSON SERVER </li>
+<li> NODE JS </li>
+  <li> MONGO DB </li>
+  <li> EXPRESS </li>
 
 </ol>
 
@@ -23,6 +25,7 @@
 <li> GIT</li>
 <li> GITHUB</li>
 <li> Local Storage</li>
+  <li> POSTMAN </li>
 </ol>
 
 # Tools for communications
